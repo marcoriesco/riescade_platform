@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="splash">
+        <image name="background">
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <minSize>1 1</minSize>
+            <linearSmooth>true</linearSmooth>
+            <color>050505</color>
+            <gradientType>vertical</gradientType>
+            <zIndex>99</zIndex>
+        </image>
+
+        <image name="background_gamesplash" extra="true">
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./_assets/_parts/gamesplash.png</path>
+            <zIndex>5</zIndex>
+        </image>
+
+        <text name="loading" extra="true">
+            <origin>0 0.5</origin>
+            <pos>0.05 0.78</pos>
+            <alignment>left</alignment>
+            <color>FFFFFFFF</color>
+            <glowColor>00000050</glowColor>
+            <glowSize>2</glowSize>
+            <glowOffset>2</glowOffset>
+            <lineSpacing>1.0</lineSpacing>
+            <fontPath>./_assets/fonts/hs.ttf</fontPath>
+            <fontSize>0.036</fontSize>
+            <text>LOADING...</text>
+            <text lang="pt">CARREGANDO...</text>
+            <text lang="fr">CHARGEMENT...</text>
+            <text lang="es">CARGANDO...</text>
+            <zIndex>0</zIndex>
+            <visible>0</visible>
+        </text>
+
+        <text name="label">
+            <origin>0 0.5</origin>
+            <pos>0 0.75</pos>
+            <size>1 1</size>
+            <alignment>center</alignment>
+            <color>9f0043</color>
+            <glowColor>00000050</glowColor>
+            <glowSize>2</glowSize>
+            <glowOffset>2</glowOffset>
+            <lineSpacing>1.0</lineSpacing>
+            <fontPath>./_assets/fonts/hs.ttf</fontPath>
+            <fontSize>0.048</fontSize>
+            <zIndex>0</zIndex>
+            <visible>0</visible>
+        </text>
+
+        <splash name="splash">
+            <backgroundColor>050505</backgroundColor>
+        </splash>
+
+    </view>
+
+</theme>

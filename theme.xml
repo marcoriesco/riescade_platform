@@ -1,0 +1,73 @@
+<!--
+
+    ███████   ██ ████████  ████████   ██████      ██     ███████   ████████
+    ░██░░░░██ ░██░██░░░░░  ██░░░░░░   ██░░░░██    ████   ░██░░░░██ ░██░░░░░ 
+    ░██   ░██ ░██░██      ░██        ██    ░░    ██░░██  ░██    ░██░██      
+    ░███████  ░██░███████ ░█████████░██         ██  ░░██ ░██    ░██░███████ 
+    ░██░░░██  ░██░██░░░░  ░░░░░░░░██░██        ██████████░██    ░██░██░░░░  
+    ░██  ░░██ ░██░██             ░██░░██    ██░██░░░░░░██░██    ██ ░██      
+    ░██   ░░██░██░████████ ████████  ░░██████ ░██     ░██░███████  ░████████
+    ░░     ░░ ░░ ░░░░░░░░ ░░░░░░░░    ░░░░░░  ░░      ░░ ░░░░░░░   ░░░░░░░░  
+
+    theme: RIESCADE Platform
+	author: RIESCADE
+    version: 1.1
+    -
+    https://youtube.com/@riescade
+    https://facebook.com/riescade
+    https://discord.gg/cR3T4wkjyQ
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="gamecarousel">
+    <formatVersion>7</formatVersion>
+
+    <!-- ICONSETS -->
+    <include name="DEFAULT">./_assets/iconsets/default.xml</include>
+
+
+    <!-- VIDEO GAMELIST -->
+    <subset name="video_gamelist" displayName="VIDEO GAMEPLAY" appliesTo="gamelist">
+        <include name="Ativo" />
+        <include name="Desativado" />
+    </subset>
+
+    <!-- COVER GAMELIST -->
+    <subset name="cover_gamelist" displayName="COVER GAME" appliesTo="gamelist">
+        <include name="Ativo" />
+        <include name="Desativado" />
+    </subset>
+
+
+    <feature supported="carousel">
+        <view name="system">
+            <sound name="bgsound"></sound>
+        </view>
+    </feature>
+
+
+    <include name="menu">./_views/common/menu.xml</include>
+    <include name="screen">./_views/common/screen.xml</include>
+
+    <include name="system">./_views/riescade_system.xml</include>
+    <include name="gamecarousel">./_views/riescade_gamelist.xml</include>
+
+    <include>./_views/common/header.xml</include>
+
+    <!--
+    Theme: es-theme-carbon
+    author: Fabrice CARUSO
+    license: creative commons CC-BY-NC-SA
+    originally based on: "Carbon" by Eric Hettervik (Rookervik)
+    originally based on: "simple" by nils bonenberger
+    -->
+    <include name="grid">./_views/common/grid.xml</include>
+    <include>./_views/common/content.xml</include>
+    <include>./_views/common/${system.theme}.xml</include>
+
+    <!-- LOAD CUSTOM SYSTEM THEMES -->
+    <include>./_assets/themes/${system.theme}/theme.xml</include>
+
+</theme>

@@ -1,0 +1,38 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.021</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>1</glowOffset>
+
+			<!-- <iconUpDown>./DEFAULT/updown.png</iconUpDown>
+			<iconLeftRight>./DEFAULT/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./DEFAULT/all.png</iconUpDownLeftRight>
+			<iconA>./DEFAULT/a.png</iconA>
+			<iconB>./DEFAULT/b.png</iconB>
+			<iconX>./DEFAULT/x.png</iconX>
+			<iconY>./DEFAULT/y.png</iconY>
+			<iconL>./DEFAULT/l.png</iconL>
+			<iconR>./DEFAULT/r.png</iconR>
+			<iconStart>./DEFAULT/start.png</iconStart>
+			<iconSelect>./DEFAULT/select.png</iconSelect> -->
+		</helpsystem>
+	</view>
+
+	<view name="grid">
+		<helpsystem name="help">
+			<pos>999 999</pos>
+			<visible>false</visible>
+			<zIndex>0</zIndex>
+		</helpsystem>
+	</view>
+
+</theme>

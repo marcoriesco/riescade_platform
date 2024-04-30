@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+
+        <carousel name="systemcarousel">
+            <origin>0 0</origin>
+            <pos>-0.2 0.115</pos>
+            <size>0.85 1</size>
+            <logoScale>1.48</logoScale>
+            <logoScale>1.43</logoScale>
+            <logoSize>0.11</logoSize>
+            <logoPos>0.29 0</logoPos>
+            <scaledLogoSpacing>1</scaledLogoSpacing>
+            <maxLogoCount>13</maxLogoCount>
+            <type>horizontal</type>
+            <systemInfoDelay>5</systemInfoDelay>
+            <color>00000000</color>
+            <logoAlignment>top</logoAlignment>
+            <zIndex>98</zIndex>
+            <defaultTransition>fade &amp; slide</defaultTransition>
+            <transitionSpeed>600</transitionSpeed>
+            <minLogoOpacity>0.85</minLogoOpacity>
+            <scrollSound>./../_assets/sounds/click.ogg</scrollSound>
+
+            <itemTemplate>
+                <container>
+                    <image name="logoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+                        <path>./_assets/_parts/body_default.png</path>
+                        <visible>!exists({system:logo})</visible>
+                    </image>
+                    <!-- <image name="logoImage" pos="0.5" origin="0.5" maxSize="0.45" linearSmooth="false"> -->
+                    <image name="logoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+                        <path>{system:logo}</path>
+                    </image>
+                    <text name="logoTextAlt" color="white" alignment="center" multiLine="true">
+                        <pos>0.19 0</pos>
+                        <size>0.625 1</size>
+                        <visible>!exists({system:logo})</visible>
+                        <text>{system:fullName}</text>
+                        <fontSize>0.024</fontSize>
+                        <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                        <color>white</color>
+                        <forceUppercase>false</forceUppercase>
+                        <lineSpacing>1.2</lineSpacing>
+                        <padding>0.1 0 0.1 0</padding>
+                    </text>
+
+                    <storyboard>
+                        <sound path="./_assets/sounds/platform.ogg"/>
+                        <animation property="y" from="0.5" duration="500" mode="easeOutCubic" />
+                    </storyboard>
+                </container>
+            </itemTemplate>
+        </carousel>
+
+        <image name="logo">
+            <!-- try png -->
+            <path>./_assets/logos/platform/${system.theme}.png</path>
+            <path>./_assets/logos/platform/${system.theme}-w.png</path>
+            <!-- try svg -->
+            <path>./_assets/logos/platform/${system.theme}.svg</path>
+            <path>./_assets/logos/platform/${system.theme}-w.svg</path>
+            <!-- check if lang resources exist -->
+            <path>./_assets/logos/platform/${system.theme}-${lang}.png</path>
+            <path>./_assets/logos/platform/${system.theme}-${lang}.svg</path>
+            <linearSmooth>true</linearSmooth>
+        </image>
+        <!-- custom collections logos -->
+        <image name="logo" if="{system.collection}">
+            <path>./_assets/logos/platform/collections/${system.theme}.png</path>
+            <path>./_assets/logos/platform/collections/${system.theme}.svg</path>
+            <path>./_assets/logos/platform/collections/${system.theme}-w.png</path>
+            <path>./_assets/logos/platform/collections/${system.theme}-w.svg</path>
+        </image>
+        <!-- ui items listed into region theme settings -->
+        <image name="logo" region="eu"/>
+        <image name="logo" region="br">
+            <path>./_assets/logos/platform/br/${system.theme}.png</path>
+            <path>./_assets/logos/platform/br/${system.theme}.svg</path>
+        </image>
+        <image name="logo" region="us">
+            <path>./_assets/logos/platform/us/${system.theme}.png</path>
+            <path>./_assets/logos/platform/us/${system.theme}.svg</path>
+        </image>
+        <image name="logo" region="jp">
+            <path>./_assets/logos/platform/jp/${system.theme}.png</path>
+            <path>./_assets/logos/platform/jp/${system.theme}.svg</path>
+        </image>
+
+        <image name="logo_active" extra="static">
+            <origin>0 0</origin>
+            <pos>0.0985 0.1115</pos>
+            <size>0.0925 0</size>
+            <linearSmooth>true</linearSmooth>
+            <path>./_assets/_parts/body_active.png</path>
+            <opacity>0</opacity>
+            <scale>0</scale>
+            <scaleOrigin>0.5 0.5</scaleOrigin>
+            <zIndex>90</zIndex>
+
+            <storyboard>
+                <animation property="opacity" from="0" to="1" duration="1000" mode="easeOut" />
+                <animation property="scale" from="0" to="1" duration="600" mode="easeOut" />
+            </storyboard>
+        </image>
+
+        <image name="background" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/arts/${system.name}.jpg</path>
+            <opacity>0</opacity>
+            <scale>2</scale>
+            <scaleOrigin>0.5 0.5</scaleOrigin>
+            <linearSmooth>true</linearSmooth>
+            <zIndex>10</zIndex>
+
+            <storyboard>
+                <animation property="opacity" from="0" to="1" duration="2500" mode="easeOut" />
+                <animation property="scale" from="2" to="1" duration="600" mode="easeOut" />
+            </storyboard>
+        </image>
+
+        <image name="overlay" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/_parts/overlay.png</path>
+            <opacity>0</opacity>
+            <zIndex>15</zIndex>
+
+            <storyboard>
+                <animation property="opacity" from="0" to="1" duration="1000" mode="easeOut" />
+            </storyboard>
+        </image>
+
+        <!-- Número de Games -->
+        <text name="systemInfo">
+            <zIndex>0</zIndex>
+        </text>
+
+        <stackpanel name="systemInfo_custom" extra="static">
+            <origin>0 0</origin>
+            <pos>0.2 0.235</pos>
+            <size>0.8 0.04</size>
+            <opacity>0</opacity>
+            <zIndex>99</zIndex>
+
+            <storyboard>
+                <animation property="opacity" from="0" to="1" duration="1200" mode="EaseIn" />
+            </storyboard>
+
+            <container>
+                <stackpanel reverse="true">
+                    <container>
+                        <size>1 1</size>
+                        <stackpanel>
+                            <size>1 1</size>
+                            <pos>0 0</pos>
+                            <separator>10</separator>
+
+                            <text name="gamename">
+                                <size>0.5 0.1</size>
+                                <text>{system:fullName}</text>
+                                <text if="${system.name} == 'retrobat'">Configurar emuladores</text>
+                                <text if="${system.name} == 'collections'">{system:subSystems} coleções</text>
+                                <text if="${system.name} == 'favorites'">Jogos favoritos</text>
+                                <text if="${system.name} == 'all'">Todos os jogos</text>
+                                <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                                <fontSize>0.026</fontSize>
+                                <color>FFFFFFFF</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                            </text>
+                            <text name="game_total">
+                                <size>0.5 0.1</size>
+                                <text>({binding:total} games)</text>
+                                <text if="${system.name} == 'retrobat'"></text>
+                                <text if="${system.name} == 'collections'"></text>
+                                <text if="${system.name} == 'favorites'"></text>
+                                <text if="${system.name} == 'all'">({binding:total} games)</text>
+                                <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                                <fontSize>0.026</fontSize>
+                                <color>FFFFFF80</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                            </text>
+                        </stackpanel>
+                    </container>
+                </stackpanel>
+            </container>
+        </stackpanel>
+
+
+        <!-- <text name="systemInfo_custom" extra="true">
+            <origin>0 0</origin>
+            <pos>0.2 0.235</pos>
+            <size> 0.04</size>
+            <text>{system:fullName} ({binding:total} games)</text>
+            <text if="${system.name} == 'retrobat'">Configurar emuladores</text>
+            <text if="${system.name} == 'collections'">{system:subSystems} coleções</text>
+            <text if="${system.name} == 'favorites'">Jogos favoritos</text>
+            <text if="${system.name} == 'all'">Todos os jogos ({binding:total} games)</text>
+            <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+            <fontSize>0.026</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>center</alignment>
+            <verticalAlignment>center</verticalAlignment>
+            <opacity>0</opacity>
+            <zIndex>95</zIndex>
+
+            <storyboard>
+                <animation property="opacity" from="0" to="1" duration="1200" mode="EaseIn" />
+            </storyboard>
+        </text> -->
+
+    </view>
+
+</theme>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontPath>./_assets/fonts/OpenSans_Condensed-Bold.ttf</fontPath>
+            <fontSize>0.03</fontSize>
+            <color>ffffff</color>
+        </menuText>
+
+        <menuText name="menufooter">
+            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>868686</color>
+        </menuText>
+
+        <menuText name="menutext">
+            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <color>868686</color>
+            <separatorColor>222222</separatorColor>
+            <selectorColor>651b74</selectorColor>
+            <selectorColorEnd>b616e4</selectorColorEnd>
+            <selectedColor>FFFFFF</selectedColor>
+            <selectorGradientType>horizontal</selectorGradientType>
+        </menuText>
+
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontSize>0.016</fontSize>
+            <color>FFFFFF</color>
+        </menuTextSmall>
+
+        <menuBackground name="menubg">
+            <color>222222</color>
+            <cornerSize>32 32</cornerSize>
+        </menuBackground>
+
+        <menuIcons name="menuicons">
+            <iconKodi>./_assets/icons/Kodi.png</iconKodi>
+            <iconSystem>./_assets/icons/System.png</iconSystem>
+            <iconUpdates>./_assets/icons/Updates.png</iconUpdates>
+            <iconGames>./_assets/icons/Games.png</iconGames>
+            <iconControllers>./_assets/icons/Controllers.png</iconControllers>
+            <iconUI>./_assets/icons/UI.png</iconUI>
+            <iconSound>./_assets/icons/Sound.png</iconSound>
+            <iconNetwork>./_assets/icons/Network.png</iconNetwork>
+            <iconScraper>./_assets/icons/Scraper.png</iconScraper>
+            <iconAdvanced>./_assets/icons/Advanced.png</iconAdvanced>
+            <iconQuit>./_assets/icons/Quit.png</iconQuit>
+            <iconRestart>./_assets/icons/Restart.png</iconRestart>
+            <iconShutdown>./_assets/icons/Shutdown.png</iconShutdown>
+            <iconFastShutdown>./_assets/icons/Fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./_assets/icons/Contest.png</iconRetroachievements>
+            <iconEmuelec>./_assets/icons/Emuelec.png</iconEmuelec>
+        </menuIcons>
+
+        <helpsystem name="help">
+            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <pos>0.06 0.955</pos>
+            <textColor>FFFFFF</textColor>
+        </helpsystem>
+    </view>
+
+</theme>
