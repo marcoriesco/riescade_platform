@@ -85,44 +85,34 @@
         <stackpanel name="gamename" extra="static">
             <pos>0.2 0.235</pos>
             <size>0.8 0.04</size>
-            <opacity>0</opacity>
             <zIndex>99</zIndex>
-
-            <storyboard event="activate">
-                <animation property="opacity" from="0" to="1" duration="1200" mode="EaseIn" />
-            </storyboard>
 
             <container>
                 <stackpanel reverse="true">
                     <container>
                         <size>1 1</size>
+
                         <stackpanel>
                             <size>1 1</size>
                             <pos>0 0</pos>
-                            <separator>20</separator>
+                            <separator>15</separator>
 
-                            <rectangle if="${system.name} == 'all'" name="gamename_system_holder">
-                                <origin>0 0</origin>
-                                <pos>0 0</pos>
-                                <size>0.1 1</size>
-                                <color>FFFFFFFF</color>
-                                <roundCorners>10</roundCorners>
-                                <padding>0 0.05 0 0.05</padding>
-
-                                <text name="gamename_system">
-                                    <origin>0.5 0.5</origin>
-                                    <pos>0.5 0.5</pos>
-                                    <size>0 0.05</size>
-                                    <text>{game:system:name}</text>
-                                    <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                    <fontSize>0.022</fontSize>
-                                    <lineSpacing>1.2</lineSpacing>
-                                    <color>222222</color>
-                                    <alignment>center</alignment>
-                                    <verticalAlignment>center</verticalAlignment>
-                                    <autoScroll>none</autoScroll>
-                                </text>
-                            </rectangle>
+                            <text if="${system.name} == 'all' || ${system.name} == 'favorites' || ${system.collection}" name="gamename_system">
+                                <visible>{game:system:name} == {game:name} ? 0 : 1</visible>
+                                <origin>0.5 0.5</origin>
+                                <pos>0.5 0.5</pos>
+                                <size>0 0.05</size>
+                                <text>{game:system:name}</text>
+                                <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontSize>0.020</fontSize>
+                                <lineSpacing>1.2</lineSpacing>
+                                <backgroundColor>FFFFFFFF</backgroundColor>
+                                <color>222222</color>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                                <autoScroll>none</autoScroll>
+                                <padding>0.01 0 0.01 0</padding>
+                            </text>
 
                             <text name="gamename_name">
                                 <size>0 1</size>
@@ -136,7 +126,6 @@
                                 <alignment>left</alignment>
                                 <verticalAlignment>center</verticalAlignment>
                             </text>
-
                         </stackpanel>
                     </container>
                 </stackpanel>

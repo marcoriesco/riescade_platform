@@ -199,32 +199,6 @@
             </container>
         </stackpanel>
 
-
-        <!-- <text name="systemInfo_custom" extra="true">
-            <origin>0 0</origin>
-            <pos>0.2 0.235</pos>
-            <size> 0.04</size>
-            <text>{system:fullName} ({binding:total} games)</text>
-            <text if="${system.name} == 'retrobat'">Configurar emuladores</text>
-            <text if="${system.name} == 'collections'">{system:subSystems} coleções</text>
-            <text if="${system.name} == 'favorites'">Jogos favoritos</text>
-            <text if="${system.name} == 'all'">Todos os jogos ({binding:total} games)</text>
-            <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
-            <fontSize>0.026</fontSize>
-            <color>FFFFFFFF</color>
-            <glowColor>000000</glowColor>
-            <glowSize>1</glowSize>
-            <glowOffset>1</glowOffset>
-            <alignment>center</alignment>
-            <verticalAlignment>center</verticalAlignment>
-            <opacity>0</opacity>
-            <zIndex>95</zIndex>
-
-            <storyboard>
-                <animation property="opacity" from="0" to="1" duration="1200" mode="EaseIn" />
-            </storyboard>
-        </text> -->
-
     </view>
 
 </theme>
