@@ -52,7 +52,7 @@
                     <scale>0.8</scale>
                     <scaleOrigin>0.5 0.5</scaleOrigin>
 
-                    <storyboard repeat="forever">
+                    <storyboard if="{system.netplay} == true" repeat="forever">
                         <animation property="scale" from="0.8" to="1" begin="100" duration="1200" autoReverse="true" mode="EaseInOut" />
                     </storyboard>
                 </image>
