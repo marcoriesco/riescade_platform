@@ -165,8 +165,10 @@
                                 <size>0.5 0.1</size>
                                 <text>{system:fullName}</text>
                                 <text if="${system.name} == 'retrobat'">Configurar emuladores</text>
-                                <text if="${system.name} == 'collections'">{system:subSystems} coleções</text>
-                                <text if="${system.name} == 'favorites'">Jogos favoritos</text>
+                                <text if="${system.name} == 'collections'">Coleções</text>
+                                <text if="${system.name} == 'favorites'">Favoritos</text>
+                                <text if="${system.name} == 'library'">Acessar Biblioteca</text>
+                                <text if="${system.name} == 'screenshots'">Acessar Screenshots</text>
                                 <text if="${system.name} == 'all'">Todos os jogos</text>
                                 <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
@@ -181,9 +183,11 @@
                                 <size>0.5 0.1</size>
                                 <text>({binding:total} games)</text>
                                 <text if="${system.name} == 'retrobat'"></text>
-                                <text if="${system.name} == 'collections'"></text>
-                                <text if="${system.name} == 'favorites'"></text>
-                                <text if="${system.name} == 'all'">({binding:total} games)</text>
+                                <text if="${system.name} == 'collections'">({system:subSystems} coleções)</text>
+                                <text if="${system.name} == 'favorites'">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'library'"></text>
+                                <text if="${system.name} == 'screenshots'"></text>
+                                <text if="${system.name} == 'all'">({system:total} games)</text>
                                 <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFF80</color>
