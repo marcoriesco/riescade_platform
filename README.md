@@ -32,12 +32,19 @@ Midjourney backgrounds use is restricted to this template.
 
 ![Loading](./_assets/_screenshots/loading.jpg)
 
+![Header](./_assets/_screenshots/header.jpg)
+
 ![Retrobat page](./_assets/_screenshots/retrobat.jpg)
 
 ![Screenshot page](./_assets/_screenshots/screenshot.jpg)
 
+![Emulators page](./_assets/_screenshots/emulators.jpg)
+
+![Gamelist Arcade](./_assets/_screenshots/gamelist-arcade.jpg)
+
 ## Credits
 
 - [Google Fonts](https://fonts.google.com/specimen/Open+Sans)
+- [Backgrounds Arcade CoinOps (modified 16:9 by Photoshop A.I)](https://discord.com/invite/q7uaBDM6GS)
 - [Backgrounds AlekFull](https://github.com/fagnerpc)
 - [Emulators Template (Retrobat)](https://github.com/fabricecaruso/es-theme-carbon)
