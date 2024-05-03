@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="system, gamecarousel">
+    <view name="system, gamecarousel, grid">
 
         <!-- UserInfo -->
         <image name="platforms_avatar" extra="static">
@@ -106,7 +106,7 @@
                                 <text>Arcades</text>
                                 <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'arcade'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.030</fontSize>
+                                <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
@@ -115,7 +115,7 @@
                                 <text>Computers</text>
                                 <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'computer'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.030</fontSize>
+                                <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
@@ -124,7 +124,16 @@
                                 <text>Consoles</text>
                                 <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'console'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.030</fontSize>
+                                <fontSize>0.026</fontSize>
+                                <color>FFFFFFFF</color>
+                                <alignment>left</alignment>
+                            </text>
+                            <text name="platform_Pinball">
+                                <size>0.5 0.1</size>
+                                <text>Pinball</text>
+                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'pinball'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
@@ -133,7 +142,7 @@
                                 <text>Ports</text>
                                 <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'port'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.030</fontSize>
+                                <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
@@ -142,7 +151,7 @@
                                 <text>Portables</text>
                                 <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'portable'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.030</fontSize>
+                                <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>

@@ -106,11 +106,12 @@
             </storyboard>
         </image>
 
-        <image name="background" extra="static">
+        <image name="fanart" extra="static">
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/arts/${system.name}.jpg</path>
+            <path>./_assets/_parts/default.jpg</path>
+            <path>./_assets/arts/${system.theme}.jpg</path>
             <opacity>0</opacity>
             <scale>2</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -202,6 +203,15 @@
                 </stackpanel>
             </container>
         </stackpanel>
+
+        <text name="demo_system" extra="true">
+            <origin>1 0</origin>
+            <pos>0.99 0.96</pos>
+            <text>${system.theme}</text>
+            <fontSize>0.015</fontSize>
+            <color>FFFFFFFF</color>
+            <zIndex>99</zIndex>
+        </text>
 
     </view>
 
