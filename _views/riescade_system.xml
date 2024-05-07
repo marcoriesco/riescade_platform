@@ -74,20 +74,6 @@
             <path>./_assets/logos/platform/collections/${system.theme}-w.png</path>
             <path>./_assets/logos/platform/collections/${system.theme}-w.svg</path>
         </image>
-        <!-- ui items listed into region theme settings -->
-        <image name="logo" region="eu"/>
-        <image name="logo" region="br">
-            <path>./_assets/logos/platform/br/${system.theme}.png</path>
-            <path>./_assets/logos/platform/br/${system.theme}.svg</path>
-        </image>
-        <image name="logo" region="us">
-            <path>./_assets/logos/platform/us/${system.theme}.png</path>
-            <path>./_assets/logos/platform/us/${system.theme}.svg</path>
-        </image>
-        <image name="logo" region="jp">
-            <path>./_assets/logos/platform/jp/${system.theme}.png</path>
-            <path>./_assets/logos/platform/jp/${system.theme}.svg</path>
-        </image>
 
         <image name="logo_active" extra="static">
             <origin>0 0</origin>
@@ -204,7 +190,7 @@
             </container>
         </stackpanel>
 
-        <text name="demo_system" extra="true">
+        <text name="development" extra="true">
             <origin>1 0</origin>
             <pos>0.99 0.96</pos>
             <text>${system.theme}</text>

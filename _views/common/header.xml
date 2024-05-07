@@ -67,8 +67,8 @@
 
         <image name="platforms_config" extra="static">
             <origin>1 0</origin>
-            <pos>0.781 0.0434</pos>
-            <size>0.032 0</size>
+            <pos>0.77 0.0434</pos>
+            <size>0.02 0</size>
             <path>./_assets/icons/Config.png</path>
             <zIndex>99</zIndex>
             <onclick>options</onclick>
@@ -77,7 +77,7 @@
         <image name="platforms_filter" extra="static">
             <origin>1 0</origin>
             <pos>0.726 0.0432</pos>
-            <size>0.032 0</size>
+            <size>0.02 0</size>
             <path>./_assets/icons/Filter.png</path>
             <zIndex>99</zIndex>
             <onclick>search</onclick>

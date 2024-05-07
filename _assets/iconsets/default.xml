@@ -1,37 +1,25 @@
 <theme>
 	<formatVersion>4</formatVersion>
 
-	<view name="menu, system, gamecarousel">
+	<view name="menu, system, grid, gamecarousel">
 		<helpsystem name="help">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.970</pos>
-			<fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
-			<fontSize>0.021</fontSize>
+			<fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+			<fontSize>0.020</fontSize>
 			<textColor>FFFFFFFF</textColor>
 			<iconColor>FFFFFFFF</iconColor>
-			<glowColor>000000</glowColor>
-			<glowSize>1</glowSize>
-			<glowOffset>1</glowOffset>
-
-			<!-- <iconUpDown>./DEFAULT/updown.png</iconUpDown>
-			<iconLeftRight>./DEFAULT/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./DEFAULT/all.png</iconUpDownLeftRight>
-			<iconA>./DEFAULT/a.png</iconA>
-			<iconB>./DEFAULT/b.png</iconB>
-			<iconX>./DEFAULT/x.png</iconX>
-			<iconY>./DEFAULT/y.png</iconY>
-			<iconL>./DEFAULT/l.png</iconL>
-			<iconR>./DEFAULT/r.png</iconR>
-			<iconStart>./DEFAULT/start.png</iconStart>
-			<iconSelect>./DEFAULT/select.png</iconSelect> -->
-		</helpsystem>
-	</view>
-
-	<view name="grid">
-		<helpsystem name="help">
-			<pos>999 999</pos>
-			<visible>false</visible>
-			<zIndex>0</zIndex>
+			<iconUpDown>./default/updown.png</iconUpDown>
+			<iconLeftRight>./default/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./default/all.png</iconUpDownLeftRight>
+			<iconA>./default/a.png</iconA>
+			<iconB>./default/b.png</iconB>
+			<iconX>./default/x.png</iconX>
+			<iconY>./default/y.png</iconY>
+			<iconL>./default/l.png</iconL>
+			<iconR>./default/r.png</iconR>
+			<iconStart>./default/start.png</iconStart>
+			<iconSelect>./default/select.png</iconSelect>
 		</helpsystem>
 	</view>
 

@@ -25,8 +25,17 @@
     <formatVersion>7</formatVersion>
 
     <!-- ICONSETS -->
-    <include name="DEFAULT">./_assets/iconsets/default.xml</include>
-
+    <subset name="iconsets" displayName="ICONES DA AJUDA">
+        <include name="Default">./_assets/iconsets/default.xml</include>
+        <include name="Arcade">./_assets/iconsets/arcade.xml</include>
+        <include name="Gamecube">./_assets/iconsets/gamecube.xml</include>
+        <include name="PSX">./_assets/iconsets/psx.xml</include>
+        <include name="PS5">./_assets/iconsets/ps5.xml</include>
+        <include name="Switch">./_assets/iconsets/switch.xml</include>
+        <include name="SNES">./_assets/iconsets/snes.xml</include>
+        <include name="XBOX">./_assets/iconsets/xbox.xml</include>
+        <include name="XBOX One">./_assets/iconsets/xboxone.xml</include>
+    </subset>
 
     <!-- VIDEO GAMELIST -->
     <subset name="video_gamelist" displayName="VIDEO GAMEPLAY" appliesTo="gamelist">

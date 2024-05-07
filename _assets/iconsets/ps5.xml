@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, grid, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+			<fontSize>0.020</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./ps5/updown.png</iconUpDown>
+			<iconLeftRight>./ps5/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./ps5/all.png</iconUpDownLeftRight>
+			<iconA>./ps5/a.png</iconA>
+			<iconB>./ps5/b.png</iconB>
+			<iconX>./ps5/x.png</iconX>
+			<iconY>./ps5/y.png</iconY>
+			<iconL>./ps5/l.png</iconL>
+			<iconR>./ps5/r.png</iconR>
+			<iconStart>./ps5/start.png</iconStart>
+			<iconSelect>./ps5/select.png</iconSelect>
+		</helpsystem>
+	</view>
+
+</theme>

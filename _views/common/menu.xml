@@ -20,9 +20,9 @@
             <fontSize>0.022</fontSize>
             <color>868686</color>
             <separatorColor>222222</separatorColor>
-            <selectorColor>651b74</selectorColor>
-            <selectorColorEnd>b616e4</selectorColorEnd>
-            <selectedColor>FFFFFF</selectedColor>
+            <selectorColor>FFFFFF</selectorColor>
+            <selectorColorEnd>222222</selectorColorEnd>
+            <selectedColor>222222</selectedColor>
             <selectorGradientType>horizontal</selectorGradientType>
         </menuText>
 
@@ -39,7 +39,7 @@
 
         <menuIcons name="menuicons">
             <iconKodi>./_assets/icons/Kodi.png</iconKodi>
-            <iconSystem>./_assets/icons/System.png</iconSystem>
+            <iconSystem>./_assets/icons/Config.png</iconSystem>
             <iconUpdates>./_assets/icons/Updates.png</iconUpdates>
             <iconGames>./_assets/icons/Games.png</iconGames>
             <iconControllers>./_assets/icons/Controllers.png</iconControllers>
