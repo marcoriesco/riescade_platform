@@ -21,7 +21,7 @@
             <color>868686</color>
             <separatorColor>222222</separatorColor>
             <selectorColor>FFFFFF</selectorColor>
-            <selectorColorEnd>222222</selectorColorEnd>
+            <selectorColorEnd>666666</selectorColorEnd>
             <selectedColor>222222</selectedColor>
             <selectorGradientType>horizontal</selectorGradientType>
         </menuText>
