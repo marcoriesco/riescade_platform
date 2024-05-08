@@ -5,7 +5,7 @@
 		<helpsystem name="help">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.970</pos>
-			<fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+			<fontPath>./_assets/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
 			<fontSize>0.020</fontSize>
 			<textColor>FFFFFFFF</textColor>
 			<iconColor>FFFFFFFF</iconColor>

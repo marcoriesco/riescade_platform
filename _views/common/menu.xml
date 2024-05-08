@@ -4,19 +4,19 @@
 
     <view name="menu">
         <menuText name="menutitle">
-            <fontPath>./_assets/fonts/OpenSans_Condensed-Bold.ttf</fontPath>
+            <fontPath>./_assets/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
             <fontSize>0.03</fontSize>
             <color>ffffff</color>
         </menuText>
 
         <menuText name="menufooter">
-            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontPath>./_assets/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
             <fontSize>0.018</fontSize>
             <color>868686</color>
         </menuText>
 
         <menuText name="menutext">
-            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontPath>./_assets/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
             <fontSize>0.022</fontSize>
             <color>868686</color>
             <separatorColor>222222</separatorColor>
@@ -27,7 +27,7 @@
         </menuText>
 
         <menuTextSmall name="menutextsmall">
-            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontPath>./_assets/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
             <fontSize>0.016</fontSize>
             <color>FFFFFF</color>
         </menuTextSmall>
@@ -57,7 +57,7 @@
         </menuIcons>
 
         <helpsystem name="help">
-            <fontPath>./_assets/fonts/OpenSans_SemiCondensed-Regular.ttf</fontPath>
+            <fontPath>./_assets/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
             <fontSize>0.022</fontSize>
             <pos>0.06 0.955</pos>
             <textColor>FFFFFF</textColor>

@@ -284,7 +284,7 @@
                     <pos>0 0.65</pos>
                     <size>0 0</size>
                     <text>{game:playcount} ? '{game:playcount}x' : '–'</text>
-                    <fontPath>./_assets/fonts/OpenSans_Condensed-Bold.ttf</fontPath>
+                    <fontPath>./_assets/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
                     <fontSize>0.021</fontSize>
                     <color>FFFFFFFF</color>
                 </text>
@@ -308,7 +308,7 @@
                     <pos>0 0.65</pos>
                     <size>0 0</size>
                     <text>{game:gametime} ? expandseconds({game:gametime}) : '–'</text>
-                    <fontPath>./_assets/fonts/OpenSans_Condensed-Bold.ttf</fontPath>
+                    <fontPath>./_assets/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
                     <fontSize>0.021</fontSize>
                     <color>FFFFFFFF</color>
                 </text>
