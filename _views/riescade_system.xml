@@ -156,6 +156,7 @@
                                 <text if="${system.name} == 'favorites'">Favoritos</text>
                                 <text if="${system.name} == 'library'">Acessar Biblioteca</text>
                                 <text if="${system.name} == 'screenshots'">Acessar Screenshots</text>
+                                <text if="${system.name} == 'magazines'">Acessar Revistas</text>
                                 <text if="${system.name} == 'all'">Todos os jogos</text>
                                 <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
@@ -174,7 +175,9 @@
                                 <text if="${system.name} == 'favorites'">({system:favorites} favoritos)</text>
                                 <text if="${system.name} == 'library'"></text>
                                 <text if="${system.name} == 'screenshots'"></text>
+                                <text if="${system.name} == 'magazines'">({system:total} revistas)</text>
                                 <text if="${system.name} == 'all'">({system:total} games)</text>
+
                                 <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFF80</color>

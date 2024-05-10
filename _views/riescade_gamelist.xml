@@ -39,6 +39,7 @@
                         <visible>exists({game:mix})</visible>
                     </image>
                     <text name="gamecarouselLogoText" color="white" alignment="center" multiLine="true">
+                        <visible>!exists({game:mix})</visible>
                         <visible>!exists({game:marquee})</visible>
                         <text>{game:name}</text>
                         <fontSize>0.018</fontSize>
@@ -202,7 +203,7 @@
         </image>
 
         <!-- Selected Game Logo -->
-        <image name="md_marquee">
+        <image name="md_marquee" if="${system.name} != 'magazines'">
             <origin>0 0</origin>
             <pos>0.09 0.49</pos>
             <maxSize>0.208 0.14</maxSize>
@@ -239,6 +240,7 @@
                 <pos>0.5 0.5</pos>
                 <size>0 0.2</size>
                 <text>Jogar</text>
+                <text if="${system.name} == 'magazines'">Visualizar</text>
                 <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
                 <fontSize>0.032</fontSize>
                 <color>FFFFFFFF</color>
