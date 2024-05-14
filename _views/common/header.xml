@@ -71,7 +71,6 @@
             <size>0.02 0</size>
             <path>./_assets/icons/Config.png</path>
             <zIndex>99</zIndex>
-            <onclick>options</onclick>
         </image>
 
         <image name="platforms_filter" extra="static">
@@ -80,7 +79,6 @@
             <size>0.02 0</size>
             <path>./_assets/icons/Filter.png</path>
             <zIndex>99</zIndex>
-            <onclick>search</onclick>
         </image>
 
     </view>
@@ -161,6 +159,19 @@
             </container>
         </stackpanel>
 
+        <!-- Click Events -->
+        <image name="platforms_avatar" extra="static">
+            <onclick>cheevos</onclick>
+        </image>
+
+        <image name="platforms_config" extra="static">
+            <onclick>navigationbar</onclick>
+        </image>
+
+        <image name="platforms_filter" extra="static">
+            <onclick>search</onclick>
+        </image>
+
     </view>
 
     <view name="gamecarousel">
@@ -175,6 +186,19 @@
             <alignment>left</alignment>
             <zIndex>99</zIndex>
         </text>
+
+        <!-- Click Events -->
+        <image name="platforms_avatar" extra="static">
+            <onclick>cheevos</onclick>
+        </image>
+
+        <image name="platforms_config" extra="static">
+            <onclick>options</onclick>
+        </image>
+
+        <image name="platforms_filter" extra="static">
+            <onclick>search</onclick>
+        </image>
 
     </view>
 

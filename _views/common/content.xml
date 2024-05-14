@@ -23,9 +23,9 @@ originally based on: "simple" by nils bonenberger
       <scale>1</scale>
       <zIndex>99</zIndex>
 
-      <!-- try png -->
+      <!-- png -->
       <path>./_assets/logos/clean/${system.theme}.png</path>
-      <!-- try svg -->
+      <!-- svg -->
       <path>./_assets/logos/clean/${system.theme}.svg</path>
       <!-- check if lang resources exist -->
       <path>./_assets/logos/clean/${system.theme}-${lang}.png</path>
