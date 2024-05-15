@@ -22,12 +22,12 @@
             <defaultTransition>fade &amp; slide</defaultTransition>
             <transitionSpeed>600</transitionSpeed>
             <minLogoOpacity>0.85</minLogoOpacity>
-            <scrollSound>./../_assets/sounds/click.ogg</scrollSound>
+            <scrollSound>./../resources/sounds/click.ogg</scrollSound>
 
             <itemTemplate>
                 <container>
                     <image name="logoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
-                        <path>./_assets/_parts/body_default.png</path>
+                        <path>./resources/_parts/body_default.png</path>
                         <visible>!exists({system:logo})</visible>
                     </image>
                     <!-- <image name="logoImage" pos="0.5" origin="0.5" maxSize="0.45" linearSmooth="false"> -->
@@ -40,7 +40,7 @@
                         <visible>!exists({system:logo})</visible>
                         <text>{system:fullName}</text>
                         <fontSize>0.024</fontSize>
-                        <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                         <color>white</color>
                         <forceUppercase>false</forceUppercase>
                         <lineSpacing>1.2</lineSpacing>
@@ -48,7 +48,7 @@
                     </text>
 
                     <storyboard>
-                        <sound path="./_assets/sounds/platform.ogg"/>
+                        <sound path="./resources/sounds/platform.ogg"/>
                         <animation property="y" from="0.5" duration="500" mode="easeOutCubic" />
                     </storyboard>
                 </container>
@@ -57,22 +57,22 @@
 
         <image name="logo">
             <!-- try png -->
-            <path>./_assets/logos/platform/${system.theme}.png</path>
-            <path>./_assets/logos/platform/${system.theme}-w.png</path>
+            <path>./resources/logos/platform/${system.theme}.png</path>
+            <path>./resources/logos/platform/${system.theme}-w.png</path>
             <!-- try svg -->
-            <path>./_assets/logos/platform/${system.theme}.svg</path>
-            <path>./_assets/logos/platform/${system.theme}-w.svg</path>
+            <path>./resources/logos/platform/${system.theme}.svg</path>
+            <path>./resources/logos/platform/${system.theme}-w.svg</path>
             <!-- check if lang resources exist -->
-            <path>./_assets/logos/platform/${system.theme}-${lang}.png</path>
-            <path>./_assets/logos/platform/${system.theme}-${lang}.svg</path>
+            <path>./resources/logos/platform/${system.theme}-${lang}.png</path>
+            <path>./resources/logos/platform/${system.theme}-${lang}.svg</path>
             <linearSmooth>true</linearSmooth>
         </image>
         <!-- custom collections logos -->
         <image name="logo" if="{system.collection}">
-            <path>./_assets/logos/platform/collections/${system.theme}.png</path>
-            <path>./_assets/logos/platform/collections/${system.theme}.svg</path>
-            <path>./_assets/logos/platform/collections/${system.theme}-w.png</path>
-            <path>./_assets/logos/platform/collections/${system.theme}-w.svg</path>
+            <path>./resources/logos/platform/collections/${system.theme}.png</path>
+            <path>./resources/logos/platform/collections/${system.theme}.svg</path>
+            <path>./resources/logos/platform/collections/${system.theme}-w.png</path>
+            <path>./resources/logos/platform/collections/${system.theme}-w.svg</path>
         </image>
 
         <image name="logo_active" extra="static">
@@ -80,7 +80,7 @@
             <pos>0.0985 0.1115</pos>
             <size>0.0925 0</size>
             <linearSmooth>true</linearSmooth>
-            <path>./_assets/_parts/body_active.png</path>
+            <path>./resources/_parts/body_active.png</path>
             <opacity>0</opacity>
             <scale>0</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -96,8 +96,8 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/_parts/default.jpg</path>
-            <path>./_assets/arts/${system.theme}.jpg</path>
+            <path>./resources/_parts/default.jpg</path>
+            <path>./resources/arts/${system.theme}.jpg</path>
             <opacity>0</opacity>
             <scale>2</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -114,7 +114,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/_parts/overlay.png</path>
+            <path>./resources/_parts/overlay.png</path>
             <opacity>0</opacity>
             <zIndex>15</zIndex>
 
@@ -158,7 +158,7 @@
                                 <text if="${system.name} == 'screenshots'">Acessar Screenshots</text>
                                 <text if="${system.name} == 'magazines'">Acessar Revistas</text>
                                 <text if="${system.name} == 'all'">Todos os jogos</text>
-                                <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <glowColor>000000</glowColor>
@@ -178,7 +178,7 @@
                                 <text if="${system.name} == 'magazines'">({system:total} revistas)</text>
                                 <text if="${system.name} == 'all'">({system:total} games)</text>
 
-                                <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFF80</color>
                                 <glowColor>000000</glowColor>

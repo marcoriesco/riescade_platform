@@ -16,7 +16,7 @@
         <image name="background_gamesplash" extra="true">
             <origin>0 0</origin>
             <size>1 1</size>
-            <path>./_assets/_parts/gamesplash.png</path>
+            <path>./resources/_parts/gamesplash.png</path>
             <zIndex>5</zIndex>
         </image>
 
@@ -29,7 +29,7 @@
             <glowSize>2</glowSize>
             <glowOffset>2</glowOffset>
             <lineSpacing>1.0</lineSpacing>
-            <fontPath>./_assets/fonts/hs.ttf</fontPath>
+            <fontPath>./resources/fonts/hs.ttf</fontPath>
             <fontSize>0.036</fontSize>
             <text>LOADING...</text>
             <text lang="pt">CARREGANDO...</text>
@@ -49,7 +49,7 @@
             <glowSize>2</glowSize>
             <glowOffset>2</glowOffset>
             <lineSpacing>1.0</lineSpacing>
-            <fontPath>./_assets/fonts/hs.ttf</fontPath>
+            <fontPath>./resources/fonts/hs.ttf</fontPath>
             <fontSize>0.048</fontSize>
             <zIndex>0</zIndex>
             <visible>0</visible>

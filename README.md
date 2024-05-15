@@ -1,4 +1,4 @@
-![Logo](./_assets/_screenshots/riescade.png)
+![Logo](./resources/_screenshots/riescade.png)
 
 # RIESCADE Platforms (PS5 style)
 
@@ -30,17 +30,17 @@ Midjourney backgrounds use is restricted to this template.
 
 ## Screenshots
 
-![Loading](./_assets/_screenshots/loading.jpg)
+![Loading](./resources/_screenshots/loading.jpg)
 
-![Header](./_assets/_screenshots/header.jpg)
+![Header](./resources/_screenshots/header.jpg)
 
-![Retrobat page](./_assets/_screenshots/retrobat.jpg)
+![Retrobat page](./resources/_screenshots/retrobat.jpg)
 
-![Screenshot page](./_assets/_screenshots/screenshot.jpg)
+![Screenshot page](./resources/_screenshots/screenshot.jpg)
 
-![Emulators page](./_assets/_screenshots/emulators.jpg)
+![Emulators page](./resources/_screenshots/emulators.jpg)
 
-![Gamelist Arcade](./_assets/_screenshots/gamelist-arcade.jpg)
+![Gamelist Arcade](./resources/_screenshots/gamelist-arcade.jpg)
 
 ## Credits
 

@@ -26,15 +26,15 @@
 
     <!-- ICONSETS -->
     <subset name="iconsets" displayName="ICONES DA AJUDA">
-        <include name="Default">./_assets/iconsets/default.xml</include>
-        <include name="Arcade">./_assets/iconsets/arcade.xml</include>
-        <include name="Gamecube">./_assets/iconsets/gamecube.xml</include>
-        <include name="PSX">./_assets/iconsets/psx.xml</include>
-        <include name="PS5">./_assets/iconsets/ps5.xml</include>
-        <include name="Switch">./_assets/iconsets/switch.xml</include>
-        <include name="SNES">./_assets/iconsets/snes.xml</include>
-        <include name="XBOX">./_assets/iconsets/xbox.xml</include>
-        <include name="XBOX One">./_assets/iconsets/xboxone.xml</include>
+        <include name="Default">./resources/iconsets/default.xml</include>
+        <include name="Arcade">./resources/iconsets/arcade.xml</include>
+        <include name="Gamecube">./resources/iconsets/gamecube.xml</include>
+        <include name="PSX">./resources/iconsets/psx.xml</include>
+        <include name="PS5">./resources/iconsets/ps5.xml</include>
+        <include name="Switch">./resources/iconsets/switch.xml</include>
+        <include name="SNES">./resources/iconsets/snes.xml</include>
+        <include name="XBOX">./resources/iconsets/xbox.xml</include>
+        <include name="XBOX One">./resources/iconsets/xboxone.xml</include>
     </subset>
 
     <!-- VIDEO GAMELIST -->
@@ -57,13 +57,13 @@
     </feature>
 
 
-    <include name="menu">./_views/common/menu.xml</include>
-    <include name="screen">./_views/common/screen.xml</include>
+    <include name="menu">./views/common/menu.xml</include>
+    <include name="screen">./views/common/screen.xml</include>
 
-    <include name="system">./_views/riescade_system.xml</include>
-    <include name="gamecarousel">./_views/riescade_gamelist.xml</include>
+    <include name="system">./views/riescade_system.xml</include>
+    <include name="gamecarousel">./views/riescade_gamelist.xml</include>
 
-    <include>./_views/common/header.xml</include>
+    <include>./views/common/header.xml</include>
 
     <!--
     Theme: es-theme-carbon
@@ -72,11 +72,11 @@
     originally based on: "Carbon" by Eric Hettervik (Rookervik)
     originally based on: "simple" by nils bonenberger
     -->
-    <include name="grid">./_views/common/grid.xml</include>
-    <include>./_views/common/content.xml</include>
-    <include>./_views/common/${system.theme}.xml</include>
+    <include name="grid">./views/common/grid.xml</include>
+    <include>./views/common/content.xml</include>
+    <include>./views/common/${system.theme}.xml</include>
 
     <!-- LOAD CUSTOM SYSTEM THEMES -->
-    <include>./_assets/themes/${system.theme}/theme.xml</include>
+    <include>./resources/themes/${system.theme}/theme.xml</include>
 
 </theme>

@@ -21,13 +21,13 @@
             <defaultTransition>fade &amp; slide</defaultTransition>
             <transitionSpeed>600</transitionSpeed>
             <minLogoOpacity>0.8</minLogoOpacity>
-            <scrollSound>./../_assets/sounds/click.ogg</scrollSound>
+            <scrollSound>./../resources/sounds/click.ogg</scrollSound>
             <imageSource>marquee</imageSource>
 
             <itemTemplate>
                 <container>
                     <image name="gamecarouselLogoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
-                        <path>./_assets/_parts/body_default.png</path>
+                        <path>./resources/_parts/body_default.png</path>
                         <visible>!exists({game:mix})</visible>
                     </image>
                     <image name="gamecarouselLogo" pos="0.5" origin="0.5" maxSize="0.6" linearSmooth="false">
@@ -43,7 +43,7 @@
                         <visible>!exists({game:marquee})</visible>
                         <text>{game:name}</text>
                         <fontSize>0.018</fontSize>
-                        <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                         <forceUppercase>false</forceUppercase>
                         <lineSpacing>1</lineSpacing>
                         <color>white</color>
@@ -53,7 +53,7 @@
                     </text>
 
                     <storyboard>
-                        <sound path="./_assets/sounds/platform.ogg"/>
+                        <sound path="./resources/sounds/platform.ogg"/>
                         <animation property="y" from="0.5" duration="500" mode="easeOutCubic" />
                     </storyboard>
                 </container>
@@ -66,7 +66,7 @@
             <pos>0.1 0.1115</pos>
             <size>0.0925 0</size>
             <linearSmooth>true</linearSmooth>
-            <path>./_assets/_parts/body_active.png</path>
+            <path>./resources/_parts/body_active.png</path>
             <opacity>0</opacity>
             <scale>0</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -104,7 +104,7 @@
                                 <pos>0.5 0.5</pos>
                                 <size>0 0.05</size>
                                 <text>{game:system:name}</text>
-                                <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.020</fontSize>
                                 <lineSpacing>1.2</lineSpacing>
                                 <backgroundColor>FFFFFFFF</backgroundColor>
@@ -118,7 +118,7 @@
                             <text name="gamename_name">
                                 <size>0 1</size>
                                 <text>{game:name}</text>
-                                <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <glowColor>000000</glowColor>
@@ -138,7 +138,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/_parts/overlay.png</path>
+            <path>./resources/_parts/overlay.png</path>
             <zIndex>17</zIndex>
         </image>
 
@@ -161,7 +161,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/_parts/default.jpg</path>
+            <path>./resources/_parts/default.jpg</path>
             <zIndex>1</zIndex>
         </image>
 
@@ -190,7 +190,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./../_assets/arts/collections/{game:name}.jpg</path>
+            <path>./../resources/arts/collections/{game:name}.jpg</path>
             <zIndex>15</zIndex>
 
             <storyboard event="activate">
@@ -217,7 +217,7 @@
             <origin>0 0</origin>
             <pos>0.09 0.65</pos>
             <size>0.35 0.075</size>
-            <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
             <fontSize>0.020</fontSize>
             <color>FFFFFFFF</color>
             <glowColor>00000016</glowColor>
@@ -241,7 +241,7 @@
                 <size>0 0.2</size>
                 <text>Jogar</text>
                 <text if="${system.name} == 'magazines'">Visualizar</text>
-                <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                 <fontSize>0.032</fontSize>
                 <color>FFFFFFFF</color>
                 <lineSpacing>2</lineSpacing>
@@ -264,7 +264,7 @@
                 <origin>0 0.5</origin>
                 <pos>0.08 0.5</pos>
                 <size>0.16 0</size>
-                <path>./../_assets/systemicons/{game:players}p.png</path>
+                <path>./../resources/systemicons/{game:players}p.png</path>
                 <opacity>0.9</opacity>
             </image>
 
@@ -277,7 +277,7 @@
                     <pos>0 0.35</pos>
                     <size>0 0</size>
                     <text>Jogadas</text>
-                    <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                    <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                     <fontSize>0.018</fontSize>
                     <color>FFFFFFFF</color>
                 </text>
@@ -286,7 +286,7 @@
                     <pos>0 0.65</pos>
                     <size>0 0</size>
                     <text>{game:playcount} ? '{game:playcount}x' : '–'</text>
-                    <fontPath>./_assets/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
+                    <fontPath>./resources/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
                     <fontSize>0.021</fontSize>
                     <color>FFFFFFFF</color>
                 </text>
@@ -301,7 +301,7 @@
                     <pos>0 0.35</pos>
                     <size>0 0</size>
                     <text>Duração</text>
-                    <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                    <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                     <fontSize>0.018</fontSize>
                     <color>FFFFFFFF</color>
                 </text>
@@ -310,7 +310,7 @@
                     <pos>0 0.65</pos>
                     <size>0 0</size>
                     <text>{game:gametime} ? expandseconds({game:gametime}) : '–'</text>
-                    <fontPath>./_assets/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
+                    <fontPath>./resources/fonts/OpenSans-Condensed-Bold.ttf</fontPath>
                     <fontSize>0.021</fontSize>
                     <color>FFFFFFFF</color>
                 </text>

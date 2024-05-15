@@ -9,7 +9,7 @@
             <origin>1 0</origin>
             <pos>0.827 0.037</pos>
             <maxSize>0.05 0.05</maxSize>
-            <path>./_assets/_parts/user.jpg</path>
+            <path>./resources/_parts/user.jpg</path>
             <roundCorners>0.5</roundCorners>
             <zIndex>99</zIndex>
             <onclick>netplay</onclick>
@@ -20,7 +20,7 @@
                     <size>0.3 0</size>
                     <color if="{system.netplay} == true">09FE87</color>
                     <color if="{system.netplay} == false">CCCCCC</color>
-                    <path>./_assets/icons/Netplay.png</path>
+                    <path>./resources/icons/Netplay.png</path>
                     <autoFade>true</autoFade>
                     <scale>0.8</scale>
                     <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -47,7 +47,7 @@
                     <size>0.3 0</size>
                     <color if="{system.netplay} == true">09FE87</color>
                     <color if="{system.netplay} == false">CCCCCC</color>
-                    <path>./_assets/icons/Netplay.png</path>
+                    <path>./resources/icons/Netplay.png</path>
                     <autoFade>true</autoFade>
                     <scale>0.8</scale>
                     <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -59,7 +59,7 @@
                 <image if="{system.cheevos} == true" name="platforms_avatar_cheevos" extra="static">
                     <pos>0.45 -0.30</pos>
                     <size>0.67 0</size>
-                    <path>./_assets/icons/Cheevos.png</path>
+                    <path>./resources/icons/Cheevos.png</path>
                     <autoFade>true</autoFade>
                 </image>
             </container>
@@ -69,7 +69,7 @@
             <origin>1 0</origin>
             <pos>0.77 0.0434</pos>
             <size>0.02 0</size>
-            <path>./_assets/icons/Config.png</path>
+            <path>./resources/icons/Config.png</path>
             <zIndex>99</zIndex>
         </image>
 
@@ -77,7 +77,7 @@
             <origin>1 0</origin>
             <pos>0.726 0.0432</pos>
             <size>0.02 0</size>
-            <path>./_assets/icons/Filter.png</path>
+            <path>./resources/icons/Filter.png</path>
             <zIndex>99</zIndex>
         </image>
 
@@ -102,8 +102,8 @@
                             <text name="platform_Arcade">
                                 <size>0.5 0.1</size>
                                 <text>Arcades</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'arcade'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'arcade'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -111,8 +111,8 @@
                             <text name="platform_Computer">
                                 <size>0.5 0.1</size>
                                 <text>Computers</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'computer'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'computer'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -120,8 +120,8 @@
                             <text name="platform_Console">
                                 <size>0.5 0.1</size>
                                 <text>Consoles</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'console'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'console'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -129,8 +129,8 @@
                             <text name="platform_Extension">
                                 <size>0.5 0.1</size>
                                 <text>Extensões</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'extension'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'extension'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -138,8 +138,8 @@
                             <text name="platform_Pinball">
                                 <size>0.5 0.1</size>
                                 <text>Pinball</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'pinball'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'pinball'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -147,8 +147,8 @@
                             <text name="platform_Port">
                                 <size>0.5 0.1</size>
                                 <text>Ports</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'port'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'port'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -156,8 +156,8 @@
                             <text name="platform_Portable">
                                 <size>0.5 0.1</size>
                                 <text>Portables</text>
-                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
-                                <fontPath if="{system.hardwareType} == 'portable'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'portable'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
@@ -189,7 +189,7 @@
             <pos>0.045 0.01</pos>
             <size>0.5 0.1</size>
             <text>{system:fullName}</text>
-            <fontPath>./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+            <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
             <fontSize>0.032</fontSize>
             <color>FFFFFFFF</color>
             <alignment>left</alignment>

@@ -24,12 +24,12 @@ originally based on: "simple" by nils bonenberger
       <zIndex>99</zIndex>
 
       <!-- png -->
-      <path>./_assets/logos/clean/${system.theme}.png</path>
+      <path>./resources/logos/clean/${system.theme}.png</path>
       <!-- svg -->
-      <path>./_assets/logos/clean/${system.theme}.svg</path>
+      <path>./resources/logos/clean/${system.theme}.svg</path>
       <!-- check if lang resources exist -->
-      <path>./_assets/logos/clean/${system.theme}-${lang}.png</path>
-      <path>./_assets/logos/clean/${system.theme}-${lang}.svg</path>
+      <path>./resources/logos/clean/${system.theme}-${lang}.png</path>
+      <path>./resources/logos/clean/${system.theme}-${lang}.svg</path>
       <linearSmooth>true</linearSmooth>
     </image>
     <!-- Background Default -->
@@ -37,7 +37,7 @@ originally based on: "simple" by nils bonenberger
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>
-      <path>./_assets/_parts/default.png</path>
+      <path>./resources/_parts/default.png</path>
       <zIndex>1</zIndex>
     </image>
 
@@ -46,7 +46,7 @@ originally based on: "simple" by nils bonenberger
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>
-      <path>./_assets/_parts/overlay.png</path>
+      <path>./resources/_parts/overlay.png</path>
       <zIndex>2</zIndex>
     </image>
 
@@ -66,7 +66,7 @@ originally based on: "simple" by nils bonenberger
           <opacity>1</opacity>
           <container>
             <image>
-              <path>./_assets/_parts/white.png</path>
+              <path>./resources/_parts/white.png</path>
               <pos>0 0</pos>
               <origin>0 0</origin>
               <size>1 1</size>
@@ -76,7 +76,7 @@ originally based on: "simple" by nils bonenberger
               <opacity>0.75</opacity>
 
               <image name="shade">
-                <path>./_assets/_parts/bg.png</path>
+                <path>./resources/_parts/bg.png</path>
                 <pos>0 0</pos>
                 <origin>0 0</origin>
                 <size>1 1</size>
@@ -89,21 +89,21 @@ originally based on: "simple" by nils bonenberger
               <ninepatch>
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>./../../_assets/_parts/framew.png</path>
+                <path>./../../resources/_parts/framew.png</path>
                 <cornerSize>20 20</cornerSize>
                 <padding>-2 -2</padding>
                 <color>000000B0</color>
                 <zIndex>3</zIndex>
 
                 <storyboard event="activate" repeat="forever">
-                  <animation property="path" to="./../../_assets/_parts/framewsel.png"/>
+                  <animation property="path" to="./../../resources/_parts/framewsel.png"/>
                   <animation property="padding" to="-15 -15"/>
                   <animation property="cornerSize" to="36 36"/>
                   <animation property="color" from="FFFFFFFF" to="9f0043" duration="1500" mode="easeOut"/>
                   <animation property="color" from="9f0043" to="FFFFFFFF" begin="1500" duration="1500" mode="easeOut"/>
                 </storyboard>
                 <storyboard event="deactivate">
-                  <animation property="path" to="./../../_assets/_parts/framew.png"/>
+                  <animation property="path" to="./../../resources/_parts/framew.png"/>
                   <animation property="color" to="000000B0"/>
                   <animation property="padding" to="-2 -2"/>
                   <animation property="cornerSize" to="20 20"/>
@@ -144,7 +144,7 @@ originally based on: "simple" by nils bonenberger
                         <origin>0 0</origin>
                         <size>1 0.3</size>
                         <text>{game:nameShort}</text>
-                        <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                         <fontSize>0.026</fontSize>
                         <verticalAlignment>bottom</verticalAlignment>
                         <multiLine>false</multiLine>
@@ -160,7 +160,7 @@ originally based on: "simple" by nils bonenberger
                         <text>{game:nameExtra}</text>
                         <extraTextColor>FFFFFF70</extraTextColor>
                         <color>FFFFFFFF</color>
-                        <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                         <fontSize>0.016</fontSize>
                         <padding>0 0 0 0.08</padding>
                         <verticalAlignment>bottom</verticalAlignment>
@@ -172,7 +172,7 @@ originally based on: "simple" by nils bonenberger
                       <size>1 0.52</size>
                       <text>{game:desc}</text>
                       <color>FFFFFFA0</color>
-                      <fontPath>./_assets/fonts/OpenSans-Regular.ttf</fontPath>
+                      <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                       <fontSize>0.018</fontSize>
                       <autoScroll>false</autoScroll>
                       <multiLine>true</multiLine>
