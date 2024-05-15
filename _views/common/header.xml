@@ -126,6 +126,15 @@
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+                            <text name="platform_Extension">
+                                <size>0.5 0.1</size>
+                                <text>Extensões</text>
+                                <fontPath>./_assets/fonts/OpenSans-Light.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'extension'">./_assets/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontSize>0.026</fontSize>
+                                <color>FFFFFFFF</color>
+                                <alignment>left</alignment>
+                            </text>
                             <text name="platform_Pinball">
                                 <size>0.5 0.1</size>
                                 <text>Pinball</text>
