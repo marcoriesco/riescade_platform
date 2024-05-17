@@ -193,6 +193,10 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./../resources/arts/collections/{game:name}.jpg</path>
+            <opacity>0</opacity>
+            <scale>2</scale>
+            <scaleOrigin>0.5 0.5</scaleOrigin>
+            <linearSmooth>true</linearSmooth>
             <zIndex>15</zIndex>
 
             <storyboard event="activate">
