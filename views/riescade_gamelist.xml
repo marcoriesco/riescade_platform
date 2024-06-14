@@ -100,23 +100,6 @@
                             <pos>0 0</pos>
                             <separator>15</separator>
 
-                            <text if="${system.name} == 'all' || ${system.name} == 'favorites' || ${system.collection}" name="gamename_system">
-                                <visible>{game:system:name} == {game:name} ? 0 : 1</visible>
-                                <origin>0.5 0.5</origin>
-                                <pos>0.5 0.5</pos>
-                                <size>0 0.05</size>
-                                <text>{game:system:name}</text>
-                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
-                                <fontSize>0.020</fontSize>
-                                <lineSpacing>1.2</lineSpacing>
-                                <backgroundColor>FFFFFFFF</backgroundColor>
-                                <color>222222</color>
-                                <alignment>center</alignment>
-                                <verticalAlignment>center</verticalAlignment>
-                                <autoScroll>none</autoScroll>
-                                <padding>0.01 0 0.01 0</padding>
-                            </text>
-
                             <text name="gamename_name">
                                 <size>0 1</size>
                                 <text>{game:name}</text>
@@ -128,6 +111,23 @@
                                 <glowOffset>1</glowOffset>
                                 <alignment>left</alignment>
                                 <verticalAlignment>center</verticalAlignment>
+                            </text>
+
+                            <text if="${system.name} == 'all' || ${system.name} == 'favorites' || ${system.collection}" name="gamename_system">
+                                <visible>{game:system:name} == {game:name} ? 0 : 1</visible>
+                                <origin>0.5 0.5</origin>
+                                <pos>0.5 0.5</pos>
+                                <size>0 0.05</size>
+                                <text>[{game:system:fullName}]</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontSize>0.018</fontSize>
+                                <color>FFFFFFFF</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <alignment>center</alignment>
+                                <verticalAlignment>top</verticalAlignment>
+                                <autoScroll>none</autoScroll>
                             </text>
                         </stackpanel>
                     </container>
