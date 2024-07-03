@@ -149,7 +149,14 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <delay>3</delay>
+            <delay ifSubset="video_gamelist_delay:0.5">0.5</delay>
+            <delay ifSubset="video_gamelist_delay:1">1</delay>
+            <delay ifSubset="video_gamelist_delay:1.5">1.5</delay>
+            <delay ifSubset="video_gamelist_delay:2">2</delay>
+            <delay ifSubset="video_gamelist_delay:2.5">2.5</delay>
+            <delay ifSubset="video_gamelist_delay:3">3</delay>
+            <delay ifSubset="video_gamelist_delay:4">5</delay>
+            <delay ifSubset="video_gamelist_delay:5">5</delay>
             <effect>none</effect>
             <zIndex>16</zIndex>
 
