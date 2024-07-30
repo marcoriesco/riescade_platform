@@ -149,14 +149,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <delay ifSubset="video_gamelist_delay:0.5">0.5</delay>
-            <delay ifSubset="video_gamelist_delay:1">1</delay>
-            <delay ifSubset="video_gamelist_delay:1.5">1.5</delay>
-            <delay ifSubset="video_gamelist_delay:2">2</delay>
-            <delay ifSubset="video_gamelist_delay:2.5">2.5</delay>
-            <delay ifSubset="video_gamelist_delay:3">3</delay>
-            <delay ifSubset="video_gamelist_delay:4">5</delay>
-            <delay ifSubset="video_gamelist_delay:5">5</delay>
+            <delay>${videoGamelistDelay}</delay>
             <effect>none</effect>
             <zIndex>16</zIndex>
 
@@ -223,6 +216,11 @@
             <verticalAlignment>bottom</verticalAlignment>
             <autoFade>true</autoFade>
             <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
+            </storyboard>
+
         </image>
 
         <!-- Selected Game Description -->
@@ -237,6 +235,10 @@
             <glowSize>1</glowSize>
             <alignment>left</alignment>
             <lineSpacing>1.35</lineSpacing>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
+            </storyboard>
         </text>
 
         <!-- Selected Game Play Button -->
@@ -247,6 +249,11 @@
             <color>FFFFFF10</color>
             <roundCorners>35</roundCorners>
             <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
+                <animation property="color" from="FFFFFF10" to="FFFFFF00" duration="600" begin="3000" mode="easeInOut" />
+            </storyboard>
 
             <text name="button_play">
                 <origin>0.5 0.5</origin>
@@ -271,7 +278,11 @@
             <size>0.1927 0.0926</size>
             <color>FFFFFF10</color>
             <zIndex>99</zIndex>
-            <onclick>search</onclick>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
+                <animation property="color" to="FFFFFF00" duration="600" begin="3000" mode="easeInOut" />
+            </storyboard>
 
             <image name="players">
                 <origin>0 0.5</origin>
@@ -328,7 +339,6 @@
                     <color>FFFFFFFF</color>
                 </text>
             </container>
-
         </rectangle>
 
         <!-- Cover 3D & 2D -->
@@ -337,15 +347,19 @@
             <pos>0.718 0.75</pos>
             <size>0.1927 0</size>
             <zIndex>18</zIndex>
+            <opacity>0</opacity>
 
             <storyboard event="activate">
-                <animation property="opacity" from="0" to="1" duration="600" mode="easeInOut" />
+                <animation property="opacity" from="0" to="1" duration="600" begin="0" mode="easeInOut" />
+                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
+
                 <animation property="y" from="0.85" to="0.75" duration="600" mode="easeInOut" />
             </storyboard>
 
             <storyboard event="deactivate">
                 <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
             </storyboard>
+
         </image>
 
     </view>
