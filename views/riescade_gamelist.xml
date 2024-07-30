@@ -153,9 +153,24 @@
             <zIndex>1900</zIndex>
 
             <storyboard event="activate">
-                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+                <animation property="opacity" from="0" to="1" duration="600" mode="easeIn" />
             </storyboard>
         </video>
+
+        <video ifSubset="video_gamelist:Ativo" name="md_video_overlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/_parts/overlay.png</path>
+            <delay>${videoGamelistDelay}</delay>
+            <effect>none</effect>
+            <zIndex>1901</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="600" mode="easeIn" />
+            </storyboard>
+        </video>
+
 
         <!-- Background Default -->
         <image name="background_default" extra="true">
