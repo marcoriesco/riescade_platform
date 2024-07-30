@@ -132,7 +132,6 @@
             <origin>0 0</origin>
             <pos>0.2 0.235</pos>
             <size>0.8 0.04</size>
-            <opacity>0</opacity>
             <zIndex>99</zIndex>
 
             <container>

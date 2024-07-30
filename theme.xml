@@ -103,6 +103,6 @@
     <include>./views/common/${system.theme}.xml</include>
 
     <!-- LOAD CUSTOM SYSTEM THEMES -->
-    <include>./custom/${system.theme}/theme.xml</include>
+    <include>./resources/_custom/${system.theme}/theme.xml</include>
 
 </theme>
