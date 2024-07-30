@@ -16,12 +16,12 @@
             <type>horizontal</type>
             <color>00000000</color>
             <logoAlignment>top</logoAlignment>
-            <zIndex>98</zIndex>
             <defaultTransition>fade &amp; slide</defaultTransition>
             <transitionSpeed>600</transitionSpeed>
             <minLogoOpacity>0.8</minLogoOpacity>
             <scrollSound>./../resources/sounds/click.ogg</scrollSound>
             <imageSource>marquee</imageSource>
+            <zIndex>2000</zIndex>
 
             <itemTemplate>
                 <container>
@@ -69,7 +69,6 @@
             <opacity>0</opacity>
             <scale>0</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
-            <zIndex>90</zIndex>
 
             <storyboard>
                 <animation property="y" from="0.5" duration="500" mode="easeOutCubic" />
@@ -88,7 +87,7 @@
         <stackpanel name="gamename" extra="static">
             <pos>0.2 0.235</pos>
             <size>0.8 0.04</size>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
 
             <container>
                 <stackpanel reverse="true">
@@ -141,7 +140,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./resources/_parts/overlay.png</path>
-            <zIndex>17</zIndex>
+            <zIndex>999</zIndex>
         </image>
 
         <!-- Video background -->
@@ -150,8 +149,8 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <delay>${videoGamelistDelay}</delay>
-            <effect>none</effect>
-            <zIndex>16</zIndex>
+            <effect>size</effect>
+            <zIndex>1900</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
@@ -164,7 +163,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./resources/_parts/default.jpg</path>
-            <zIndex>1</zIndex>
+            <zIndex>900</zIndex>
         </image>
 
         <!-- Fanart background -->
@@ -176,7 +175,7 @@
             <scale>2</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
             <linearSmooth>true</linearSmooth>
-            <zIndex>14</zIndex>
+            <zIndex>901</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
@@ -197,7 +196,7 @@
             <scale>2</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
             <linearSmooth>true</linearSmooth>
-            <zIndex>15</zIndex>
+            <zIndex>901</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
@@ -215,12 +214,7 @@
             <maxSize>0.208 0.14</maxSize>
             <verticalAlignment>bottom</verticalAlignment>
             <autoFade>true</autoFade>
-            <zIndex>99</zIndex>
-
-            <storyboard event="activate">
-                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
-            </storyboard>
-
+            <zIndex>1000</zIndex>
         </image>
 
         <!-- Selected Game Description -->
@@ -235,10 +229,7 @@
             <glowSize>1</glowSize>
             <alignment>left</alignment>
             <lineSpacing>1.35</lineSpacing>
-
-            <storyboard event="activate">
-                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
-            </storyboard>
+            <zIndex>1000</zIndex>
         </text>
 
         <!-- Selected Game Play Button -->
@@ -248,12 +239,7 @@
             <size>0.174 0.07</size>
             <color>FFFFFF10</color>
             <roundCorners>35</roundCorners>
-            <zIndex>99</zIndex>
-
-            <storyboard event="activate">
-                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
-                <animation property="color" from="FFFFFF10" to="FFFFFF00" duration="600" begin="3000" mode="easeInOut" />
-            </storyboard>
+            <zIndex>1000</zIndex>
 
             <text name="button_play">
                 <origin>0.5 0.5</origin>
@@ -277,12 +263,7 @@
             <pos>0.718 0.7625</pos>
             <size>0.1927 0.0926</size>
             <color>FFFFFF10</color>
-            <zIndex>99</zIndex>
-
-            <storyboard event="activate">
-                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
-                <animation property="color" to="FFFFFF00" duration="600" begin="3000" mode="easeInOut" />
-            </storyboard>
+            <zIndex>1000</zIndex>
 
             <image name="players">
                 <origin>0 0.5</origin>
@@ -346,13 +327,11 @@
             <origin>0 1</origin>
             <pos>0.718 0.75</pos>
             <size>0.1927 0</size>
-            <zIndex>18</zIndex>
             <opacity>0</opacity>
+            <zIndex>1000</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="600" begin="0" mode="easeInOut" />
-                <animation property="opacity" from="1" to="0" duration="600" begin="3000" mode="easeInOut" />
-
                 <animation property="y" from="0.85" to="0.75" duration="600" mode="easeInOut" />
             </storyboard>
 

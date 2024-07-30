@@ -73,16 +73,6 @@
         <videoGamelistDelay ifSubset="video_gamelist_delay:3">3</videoGamelistDelay>
         <videoGamelistDelay ifSubset="video_gamelist_delay:4">4</videoGamelistDelay>
         <videoGamelistDelay ifSubset="video_gamelist_delay:5">5</videoGamelistDelay>
-
-        <!-- var begin -->
-        <videoGamelistBegin ifSubset="video_gamelist_delay:0.5">500</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:1">1000</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:1.5">1500</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:2">2000</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:2.5">2500</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:3">3000</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:4">4000</videoGamelistBegin>
-        <videoGamelistBegin ifSubset="video_gamelist_delay:5">5000</videoGamelistBegin>
     </variables>
 
 
@@ -113,6 +103,6 @@
     <include>./views/common/${system.theme}.xml</include>
 
     <!-- LOAD CUSTOM SYSTEM THEMES -->
-    <include>./resources/themes/${system.theme}/theme.xml</include>
+    <include>./custom/${system.theme}/theme.xml</include>
 
 </theme>

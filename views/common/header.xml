@@ -11,7 +11,7 @@
             <maxSize>0.05 0.05</maxSize>
             <path>./resources/_parts/user.jpg</path>
             <roundCorners>0.5</roundCorners>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
             <onclick>netplay</onclick>
 
             <container>
@@ -38,7 +38,7 @@
             <maxSize>0.05 0.05</maxSize>
             <path if="${global.cheevos.username}">https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
             <roundCorners>0.5</roundCorners>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
             <onclick>netplay</onclick>
 
             <container>
@@ -70,7 +70,7 @@
             <pos>0.77 0.0434</pos>
             <size>0.02 0</size>
             <path>./resources/icons/Config.png</path>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
         </image>
 
         <image name="platforms_filter" extra="static">
@@ -78,7 +78,7 @@
             <pos>0.726 0.0432</pos>
             <size>0.02 0</size>
             <path>./resources/icons/Filter.png</path>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
         </image>
 
     </view>
@@ -88,7 +88,7 @@
         <stackpanel name="platforms" extra="static">
             <pos>0.045 0.01</pos>
             <size>0.5 0.1</size>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
 
             <container>
                 <stackpanel reverse="true">
@@ -193,7 +193,7 @@
             <fontSize>0.032</fontSize>
             <color>FFFFFFFF</color>
             <alignment>left</alignment>
-            <zIndex>99</zIndex>
+            <zIndex>2000</zIndex>
         </text>
 
         <!-- Click Events -->

@@ -135,10 +135,6 @@
             <opacity>0</opacity>
             <zIndex>99</zIndex>
 
-            <storyboard>
-                <animation property="opacity" from="0" to="1" duration="600" mode="EaseIn" />
-            </storyboard>
-
             <container>
                 <stackpanel reverse="true">
                     <container>
