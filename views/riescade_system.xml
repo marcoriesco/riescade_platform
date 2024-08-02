@@ -27,7 +27,7 @@
             <itemTemplate>
                 <container>
                     <image name="logoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
-                        <path>./resources/_parts/body_default.png</path>
+                        <path>./resources/_parts/logo_default.png</path>
                         <visible>!exists({system:logo})</visible>
                     </image>
                     <!-- <image name="logoImage" pos="0.5" origin="0.5" maxSize="0.45" linearSmooth="false"> -->
@@ -80,7 +80,7 @@
             <pos>0.0985 0.1115</pos>
             <size>0.0925 0</size>
             <linearSmooth>true</linearSmooth>
-            <path>./resources/_parts/body_active.png</path>
+            <path>./resources/_parts/logo_selected.png</path>
             <opacity>0</opacity>
             <scale>0</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>

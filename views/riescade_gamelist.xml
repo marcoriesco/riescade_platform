@@ -26,7 +26,7 @@
             <itemTemplate>
                 <container>
                     <image name="gamecarouselLogoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
-                        <path>./resources/_parts/body_default.png</path>
+                        <path>./resources/_parts/logo_default.png</path>
                         <visible>!exists({game:mix})</visible>
                     </image>
                     <image name="gamecarouselLogo" pos="0.5" origin="0.5" maxSize="0.6" linearSmooth="false">
@@ -65,7 +65,7 @@
             <pos>0.1 0.1115</pos>
             <size>0.0925 0</size>
             <linearSmooth>true</linearSmooth>
-            <path>./resources/_parts/body_active.png</path>
+            <path>./resources/_parts/logo_selected.png</path>
             <opacity>0</opacity>
             <scale>0</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
@@ -157,7 +157,6 @@
                 <animation property="opacity" from="0" to="1" duration="600" mode="easeIn" />
             </storyboard>
         </video>
-
         <video ifSubset="video_gamelist:Ativo" name="md_video_overlay" extra="true">
             <origin>0 0</origin>
             <pos>0 0</pos>
@@ -171,7 +170,6 @@
                 <animation property="opacity" from="0" to="1" duration="600" mode="easeIn" />
             </storyboard>
         </video>
-
 
         <!-- Background Default -->
         <image name="background_default" extra="true">
