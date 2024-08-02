@@ -145,14 +145,53 @@
 
                             <text name="gamename">
                                 <size>0.5 0.1</size>
+
                                 <text>{system:fullName}</text>
-                                <text if="${system.name} == 'retrobat'">Configurar emuladores</text>
-                                <text if="${system.name} == 'collections'">Coleções</text>
-                                <text if="${system.name} == 'favorites'">Favoritos</text>
-                                <text if="${system.name} == 'library'">Acessar Biblioteca</text>
-                                <text if="${system.name} == 'screenshots'">Acessar Screenshots</text>
-                                <text if="${system.name} == 'magazines'">Acessar Revistas</text>
-                                <text if="${system.name} == 'all'">Todos os jogos</text>
+
+                                <text if="${system.name} == 'retrobat'">Configure emulators</text>
+                                <text if="${system.name} == 'collections'">Collections</text>
+                                <text if="${system.name} == 'favorites'">Favorites</text>
+                                <text if="${system.name} == 'library'">Access Library</text>
+                                <text if="${system.name} == 'screenshots'">Access Screenshots</text>
+                                <text if="${system.name} == 'magazines'">Access Magazines</text>
+                                <text if="${system.name} == 'all'">All games</text>
+
+                                <!-- English (default, without lang tag) -->
+                                <text if="${system.name} == 'retrobat'" lang="en">Configure emulators</text>
+                                <text if="${system.name} == 'collections'" lang="en">Collections</text>
+                                <text if="${system.name} == 'favorites'" lang="en">Favorites</text>
+                                <text if="${system.name} == 'library'" lang="en">Access Library</text>
+                                <text if="${system.name} == 'screenshots'" lang="en">Access Screenshots</text>
+                                <text if="${system.name} == 'magazines'" lang="en">Access Magazines</text>
+                                <text if="${system.name} == 'all'" lang="en">All games</text>
+
+                                <!-- Portuguese -->
+                                <text if="${system.name} == 'retrobat'" lang="pt">Configurar emuladores</text>
+                                <text if="${system.name} == 'collections'" lang="pt">Coleções</text>
+                                <text if="${system.name} == 'favorites'" lang="pt">Favoritos</text>
+                                <text if="${system.name} == 'library'" lang="pt">Acessar Biblioteca</text>
+                                <text if="${system.name} == 'screenshots'" lang="pt">Acessar Screenshots</text>
+                                <text if="${system.name} == 'magazines'" lang="pt">Acessar Revistas</text>
+                                <text if="${system.name} == 'all'" lang="pt">Todos os jogos</text>
+
+                                <!-- Spanish -->
+                                <text if="${system.name} == 'retrobat'" lang="es">Configurar emuladores</text>
+                                <text if="${system.name} == 'collections'" lang="es">Colecciones</text>
+                                <text if="${system.name} == 'favorites'" lang="es">Favoritos</text>
+                                <text if="${system.name} == 'library'" lang="es">Acceder a la Biblioteca</text>
+                                <text if="${system.name} == 'screenshots'" lang="es">Acceder a Capturas de Pantalla</text>
+                                <text if="${system.name} == 'magazines'" lang="es">Acceder a Revistas</text>
+                                <text if="${system.name} == 'all'" lang="es">Todos los juegos</text>
+
+                                <!-- French -->
+                                <text if="${system.name} == 'retrobat'" lang="fr">Configurer les émulateurs</text>
+                                <text if="${system.name} == 'collections'" lang="fr">Collections</text>
+                                <text if="${system.name} == 'favorites'" lang="fr">Favoris</text>
+                                <text if="${system.name} == 'library'" lang="fr">Accéder à la Bibliothèque</text>
+                                <text if="${system.name} == 'screenshots'" lang="fr">Accéder aux Captures d'Écran</text>
+                                <text if="${system.name} == 'magazines'" lang="fr">Accéder aux Magazines</text>
+                                <text if="${system.name} == 'all'" lang="fr">Tous les jeux</text>
+
                                 <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>
                                 <color>FFFFFFFF</color>
@@ -164,14 +203,55 @@
                             </text>
                             <text name="game_total">
                                 <size>0.5 0.1</size>
+
                                 <text>{binding:total} > 1 ? '({binding:total} games)' : '({binding:total} game)'</text>
                                 <text if="${system.name} == 'retrobat'"></text>
-                                <text if="${system.name} == 'collections'">({system:subSystems} coleções)</text>
-                                <text if="${system.name} == 'favorites'">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'collections'">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'">({system:favorites} favorites)</text>
                                 <text if="${system.name} == 'library'"></text>
                                 <text if="${system.name} == 'screenshots'"></text>
-                                <text if="${system.name} == 'magazines'">({system:total} revistas)</text>
+                                <text if="${system.name} == 'magazines'">({system:total} magazines)</text>
                                 <text if="${system.name} == 'all'">({system:total} games)</text>
+
+                                <!-- English (default, without lang tag) -->
+                                <text lang="en">{binding:total} > 1 ? '({binding:total} games)' : '({binding:total} game)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="en"></text>
+                                <text if="${system.name} == 'collections'" lang="en">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'" lang="en">({system:favorites} favorites)</text>
+                                <text if="${system.name} == 'library'" lang="en"></text>
+                                <text if="${system.name} == 'screenshots'" lang="en"></text>
+                                <text if="${system.name} == 'magazines'" lang="en">({system:total} magazines)</text>
+                                <text if="${system.name} == 'all'" lang="en">({system:total} games)</text>
+
+                                <!-- Portuguese -->
+                                <text lang="pt">{binding:total} > 1 ? '({binding:total} jogos)' : '({binding:total} jogo)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="pt"></text>
+                                <text if="${system.name} == 'collections'" lang="pt">({system:subSystems} coleções)</text>
+                                <text if="${system.name} == 'favorites'" lang="pt">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'library'" lang="pt"></text>
+                                <text if="${system.name} == 'screenshots'" lang="pt"></text>
+                                <text if="${system.name} == 'magazines'" lang="pt">({system:total} revistas)</text>
+                                <text if="${system.name} == 'all'" lang="pt">({system:total} jogos)</text>
+
+                                <!-- Spanish -->
+                                <text lang="es">{binding:total} > 1 ? '({binding:total} juegos)' : '({binding:total} juego)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="es"></text>
+                                <text if="${system.name} == 'collections'" lang="es">({system:subSystems} colecciones)</text>
+                                <text if="${system.name} == 'favorites'" lang="es">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'library'" lang="es"></text>
+                                <text if="${system.name} == 'screenshots'" lang="es"></text>
+                                <text if="${system.name} == 'magazines'" lang="es">({system:total} revistas)</text>
+                                <text if="${system.name} == 'all'" lang="es">({system:total} juegos)</text>
+
+                                <!-- French -->
+                                <text lang="fr">{binding:total} > 1 ? '({binding:total} jeux)' : '({binding:total} jeu)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="fr"></text>
+                                <text if="${system.name} == 'collections'" lang="fr">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'" lang="fr">({system:favorites} favoris)</text>
+                                <text if="${system.name} == 'library'" lang="fr"></text>
+                                <text if="${system.name} == 'screenshots'" lang="fr"></text>
+                                <text if="${system.name} == 'magazines'" lang="fr">({system:total} magazines)</text>
+                                <text if="${system.name} == 'all'" lang="fr">({system:total} jeux)</text>
 
                                 <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
                                 <fontSize>0.026</fontSize>

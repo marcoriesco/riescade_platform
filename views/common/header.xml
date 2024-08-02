@@ -102,66 +102,101 @@
                             <text name="platform_Arcade">
                                 <size>0.5 0.1</size>
                                 <text>Arcades</text>
+                                <text lang="en">Arcades</text>
+                                <text lang="pt">Arcades</text>
+                                <text lang="es">Arcades</text>
+                                <text lang="fr">Arcades</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'arcade'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Computer">
                                 <size>0.5 0.1</size>
                                 <text>Computers</text>
+                                <text lang="en">Computers</text>
+                                <text lang="pt">Computadores</text>
+                                <text lang="es">Computadoras</text>
+                                <text lang="fr">Ordinateurs</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'computer'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Console">
                                 <size>0.5 0.1</size>
                                 <text>Consoles</text>
+                                <text lang="en">Consoles</text>
+                                <text lang="pt">Consoles</text>
+                                <text lang="es">Consolas</text>
+                                <text lang="fr">Consoles</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'console'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Extension">
                                 <size>0.5 0.1</size>
-                                <text>Extensões</text>
+                                <text>Extensions</text>
+                                <text lang="en">Extensions</text>
+                                <text lang="pt">Extensões</text>
+                                <text lang="es">Extensiones</text>
+                                <text lang="fr">Extensions</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'extension'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Pinball">
                                 <size>0.5 0.1</size>
                                 <text>Pinball</text>
+                                <text lang="en">Pinball</text>
+                                <text lang="pt">Pinball</text>
+                                <text lang="es">Pinball</text>
+                                <text lang="fr">Flipper</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'pinball'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Port">
                                 <size>0.5 0.1</size>
                                 <text>Ports</text>
+                                <text lang="en">Ports</text>
+                                <text lang="pt">Ports</text>
+                                <text lang="es">Ports</text>
+                                <text lang="fr">Ports</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'port'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                             <text name="platform_Portable">
                                 <size>0.5 0.1</size>
                                 <text>Portables</text>
+                                <text lang="en">Portables</text>
+                                <text lang="pt">Portáteis</text>
+                                <text lang="es">Portátiles</text>
+                                <text lang="fr">Portables</text>
                                 <fontPath>./resources/fonts/OpenSans-Light.ttf</fontPath>
                                 <fontPath if="{system.hardwareType} == 'portable'">./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                                 <fontSize>0.022</fontSize>
                                 <color>FFFFFFFF</color>
                                 <alignment>left</alignment>
                             </text>
+
                         </stackpanel>
                     </container>
                 </stackpanel>

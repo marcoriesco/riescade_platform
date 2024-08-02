@@ -259,8 +259,19 @@
                 <origin>0.5 0.5</origin>
                 <pos>0.5 0.5</pos>
                 <size>0 0.2</size>
-                <text>Jogar</text>
-                <text if="${system.name} == 'magazines'">Visualizar</text>
+
+                <text>Play!</text>
+                <text lang="en">Play!</text>
+                <text lang="pt">Jogar!</text>
+                <text lang="es">Jugar!</text>
+                <text lang="fr">Jouer!</text>
+
+                <text if="${system.name} == 'magazine'">View!</text>
+                <text if="${system.name} == 'magazine'" lang="en">View!</text>
+                <text if="${system.name} == 'magazine'" lang="pt">Visualizar!</text>
+                <text if="${system.name} == 'magazine'" lang="es">Ver!</text>
+                <text if="${system.name} == 'magazine'" lang="fr">Regarder!</text>
+
                 <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
                 <fontSize>0.032</fontSize>
                 <color>FFFFFFFF</color>
