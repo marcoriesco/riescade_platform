@@ -268,14 +268,15 @@
             </container>
         </stackpanel>
 
-        <text name="development" extra="true">
+        <!-- <text name="development" extra="true">
             <origin>1 0</origin>
             <pos>0.99 0.96</pos>
             <text>${system.theme}</text>
             <fontSize>0.015</fontSize>
             <color>FFFFFFFF</color>
             <zIndex>99</zIndex>
-        </text>
+            <zIndex>0</zIndex>
+        </text> -->
 
     </view>
 
