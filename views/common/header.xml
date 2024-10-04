@@ -5,7 +5,7 @@
     <view name="system, gamecarousel, grid">
 
         <!-- UserInfo -->
-        <image name="platforms_avatar" extra="static">
+        <image name="platforms_avatar" extra="static" ifSubset="systems:PLATFORM1">
             <origin>1 0</origin>
             <pos>0.827 0.037</pos>
             <maxSize>0.05 0.05</maxSize>
@@ -32,7 +32,7 @@
             </container>
         </image>
 
-        <webimage if="{global.cheevos} == true" name="platforms_avatar" extra="static">
+        <webimage if="{global.cheevos} == true" name="platforms_avatar" extra="static" ifSubset="systems:PLATFORM1">
             <origin>1 0</origin>
             <pos>0.827 0.037</pos>
             <maxSize>0.05 0.05</maxSize>
@@ -65,7 +65,7 @@
             </container>
         </webimage>
 
-        <image name="platforms_config" extra="static">
+        <image name="platforms_config" extra="static" ifSubset="systems:PLATFORM1">
             <origin>1 0</origin>
             <pos>0.77 0.0434</pos>
             <size>0.02 0</size>
@@ -73,7 +73,7 @@
             <zIndex>2000</zIndex>
         </image>
 
-        <image name="platforms_filter" extra="static">
+        <image name="platforms_filter" extra="static" ifSubset="systems:PLATFORM1">
             <origin>1 0</origin>
             <pos>0.726 0.0432</pos>
             <size>0.02 0</size>
@@ -81,11 +81,72 @@
             <zIndex>2000</zIndex>
         </image>
 
+
+        <image name="platforms_avatar" extra="static" ifSubset="systems:PLATFORM2">
+            <origin>1 0</origin>
+            <pos>0.895 0.035</pos>
+            <maxSize>0.05 0.05</maxSize>
+            <path>./resources/_parts/user.jpg</path>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>2000</zIndex>
+            <onclick>netplay</onclick>
+
+            <container>
+                <image name="platforms_avatar_netplay" extra="static">
+                    <pos>0.8 0.5</pos>
+                    <size>0.3 0</size>
+                    <color if="{system.netplay} == true">09FE87</color>
+                    <color if="{system.netplay} == false">CCCCCC</color>
+                    <path>./resources/icons/Netplay.png</path>
+                    <autoFade>true</autoFade>
+                </image>
+            </container>
+        </image>
+
+        <webimage if="{global.cheevos} == true" name="platforms_avatar" extra="static" ifSubset="systems:PLATFORM2">
+            <origin>1 0</origin>
+            <pos>0.895 0.035</pos>
+            <maxSize>0.05 0.05</maxSize>
+            <path if="${global.cheevos.username}">https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>2000</zIndex>
+            <onclick>netplay</onclick>
+
+            <container>
+                <image name="platforms_avatar_netplay" extra="static">
+                    <pos>0.8 0.5</pos>
+                    <size>0.3 0</size>
+                    <color if="{system.netplay} == true">09FE87</color>
+                    <color if="{system.netplay} == false">CCCCCC</color>
+                    <path>./resources/icons/Netplay.png</path>
+                    <autoFade>true</autoFade>
+                </image>
+                <image if="{system.cheevos} == true" name="platforms_avatar_cheevos" extra="static">
+                    <pos>0.45 -0.30</pos>
+                    <size>0.67 0</size>
+                    <path>./resources/icons/Cheevos.png</path>
+                    <autoFade>true</autoFade>
+                </image>
+            </container>
+        </webimage>
+
+        <text if="{global.cheevos} == true" name="platforms_cheevos_username" extra="static" ifSubset="systems:PLATFORM2">
+            <origin>1 0</origin>
+            <pos>0.978 0.022</pos>
+            <size>0.076 0.05</size>
+            <text>${global.cheevos.username}</text>
+            <fontPath>./resources/fonts/OpenSans-Bold.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>FFFFFF</color>
+            <alignment>left</alignment>
+            <zIndex>2000</zIndex>
+        </text>
+
     </view>
 
     <view name="system">
 
-        <stackpanel name="platforms" extra="static">
+        <stackpanel name="platforms" extra="static" ifSubset="systems:PLATFORM1">
             <pos>0.045 0.01</pos>
             <size>0.5 0.1</size>
             <zIndex>2000</zIndex>
@@ -203,6 +264,149 @@
             </container>
         </stackpanel>
 
+        <stackpanel name="platforms" extra="static" ifSubset="systems:PLATFORM2">
+            <pos>0.1 0.1</pos>
+            <size>0.5 0.1</size>
+            <zIndex>2000</zIndex>
+
+            <container>
+                <stackpanel reverse="true">
+                    <container>
+                        <size>1 1</size>
+                        <stackpanel>
+                            <size>1 1</size>
+                            <pos>0 0</pos>
+                            <separator>20</separator>
+
+                            <text name="platform_Arcade">
+                                <size>0.5 0.1</size>
+                                <text>ARCADES</text>
+                                <text lang="en">ARCADES</text>
+                                <text lang="pt">ARCADES</text>
+                                <text lang="es">ARCADES</text>
+                                <text lang="fr">ARCADES</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'arcade'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'arcade'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Computer">
+                                <size>0.5 0.1</size>
+                                <text>COMPUTERS</text>
+                                <text lang="en">COMPUTERS</text>
+                                <text lang="pt">COMPUTADORES</text>
+                                <text lang="es">COMPUTADORAS</text>
+                                <text lang="fr">Ordinateurs</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'computer'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'computer'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Console">
+                                <size>0.5 0.1</size>
+                                <text>CONSOLES</text>
+                                <text lang="en">CONSOLES</text>
+                                <text lang="pt">CONSOLES</text>
+                                <text lang="es">CONSOLAS</text>
+                                <text lang="fr">CONSOLES</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'console'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'console'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Extension">
+                                <size>0.5 0.1</size>
+                                <text>EXTENSIONS</text>
+                                <text lang="en">EXTENSIONS</text>
+                                <text lang="pt">EXTENSÕES</text>
+                                <text lang="es">EXTENSIONES</text>
+                                <text lang="fr">EXTENSIONS</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'extension'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'extension'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Pinball">
+                                <size>0.5 0.1</size>
+                                <text>PINBALL</text>
+                                <text lang="en">PINBALL</text>
+                                <text lang="pt">PINBALL</text>
+                                <text lang="es">PINBALL</text>
+                                <text lang="fr">FLIPPER</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'pinball'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'pinball'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Port">
+                                <size>0.5 0.1</size>
+                                <text>PORTS</text>
+                                <text lang="en">PORTS</text>
+                                <text lang="pt">PORTS</text>
+                                <text lang="es">PORTS</text>
+                                <text lang="fr">PORTS</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'port'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'port'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                            <text name="platform_Portable">
+                                <size>0.5 0.1</size>
+                                <text>PORTABLES</text>
+                                <text lang="en">PORTABLES</text>
+                                <text lang="pt">PORTÁTEIS</text>
+                                <text lang="es">PORTÁTILES</text>
+                                <text lang="fr">PORTABLES</text>
+                                <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+                                <fontPath if="{system.hardwareType} == 'portable'">./resources/fonts/OpenSans-Bold.ttf</fontPath>
+                                <color>FFFFFF85</color>
+                                <color if="{system.hardwareType} == 'portable'">FFFFFFFF</color>
+                                <fontSize>0.016</fontSize>
+                                <alignment>left</alignment>
+                            </text>
+
+                        </stackpanel>
+                    </container>
+                </stackpanel>
+            </container>
+        </stackpanel>
+
+
+        <image name="platforms_l1" extra="static" ifSubset="systems:PLATFORM2">
+            <origin>0 0</origin>
+            <pos>0.07 0.14</pos>
+            <maxSize>0.02 0.02</maxSize>
+            <path>./resources/iconsets/ps5/l.png</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platforms_r1" extra="static" ifSubset="systems:PLATFORM2">
+            <origin>0 0</origin>
+            <pos>0.485 0.14</pos>
+            <maxSize>0.02 0.02</maxSize>
+            <path>./resources/iconsets/ps5/r.png</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+
         <!-- Click Events -->
         <image name="platforms_avatar" extra="static">
             <onclick>cheevos</onclick>
@@ -220,7 +424,7 @@
 
     <view name="gamecarousel">
 
-        <text name="platforms" extra="static">
+        <text name="platforms" extra="static" ifSubset="systems:PLATFORM1">
             <pos>0.045 0.01</pos>
             <size>0.5 0.1</size>
             <text>{system:fullName}</text>
@@ -228,6 +432,17 @@
             <fontSize>0.032</fontSize>
             <color>FFFFFFFF</color>
             <alignment>left</alignment>
+            <zIndex>2000</zIndex>
+        </text>
+
+        <text name="platforms" extra="static" ifSubset="systems:PLATFORM2">
+            <pos>0 0.01</pos>
+            <size>1 0.1</size>
+            <text>{system:fullName}</text>
+            <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFFFF</color>
+            <alignment>center</alignment>
             <zIndex>2000</zIndex>
         </text>
 

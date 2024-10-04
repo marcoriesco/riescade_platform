@@ -61,6 +61,12 @@
         <include name="Desativado" />
     </subset>
 
+    <!-- SYSTEMS TESTE -->
+    <subset name="systems" displayName="PLATFORMS">
+        <include name="PLATFORM1" />
+        <include name="PLATFORM2" />
+    </subset>
+
 
     <!-- VARS -->
     <variables>
@@ -86,7 +92,11 @@
     <include name="menu">./views/common/menu.xml</include>
     <include name="screen">./views/common/screen.xml</include>
 
-    <include name="system">./views/riescade_system.xml</include>
+    <!-- SYSTEMS -->
+    <include ifSubset="systems:PLATFORM1" name="system">./views/riescade_system.xml</include>
+    <include ifSubset="systems:PLATFORM2" name="system">./views/riescade_system2.xml</include>
+
+    <!-- GAMELISTS -->
     <!-- <include name="gamecarousel">./views/riescade_gamelist.xml</include> -->
     <include name="gamecarousel">./views/riescade_gamelist_alt.xml</include>
 

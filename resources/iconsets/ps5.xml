@@ -2,12 +2,32 @@
 	<formatVersion>4</formatVersion>
 
 	<view name="menu, system, grid, gamecarousel">
-		<helpsystem name="help">
+		<helpsystem name="help" ifSubset="systems:PLATFORM1">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.970</pos>
 			<fontPath>./resources/fonts/OpenSans-Condensed-Regular.ttf</fontPath>
 			<fontSize>0.020</fontSize>
 			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./ps5/updown.png</iconUpDown>
+			<iconLeftRight>./ps5/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./ps5/all.png</iconUpDownLeftRight>
+			<iconA>./ps5/a.png</iconA>
+			<iconB>./ps5/b.png</iconB>
+			<iconX>./ps5/x.png</iconX>
+			<iconY>./ps5/y.png</iconY>
+			<iconL>./ps5/l.png</iconL>
+			<iconR>./ps5/r.png</iconR>
+			<iconStart>./ps5/start.png</iconStart>
+			<iconSelect>./ps5/select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="systems:PLATFORM2">
+			<origin>1 0</origin>
+			<pos>0.951 0.945</pos>
+			<fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<textColor>c7c8ca</textColor>
 			<iconColor>FFFFFFFF</iconColor>
 			<iconUpDown>./ps5/updown.png</iconUpDown>
 			<iconLeftRight>./ps5/leftright.png</iconLeftRight>

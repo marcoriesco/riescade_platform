@@ -5,7 +5,7 @@
     <view name="screen">
 
         <!-- Controller Activity -->
-        <controllerActivity name="controllerActivity">
+        <controllerActivity name="controllerActivity" ifSubset="systems:PLATFORM1">
             <origin>0 0</origin>
             <pos>0.015 0.950</pos>
             <size>0.03 0.03</size>
@@ -17,8 +17,22 @@
             <zIndex>99</zIndex>
         </controllerActivity>
 
+        <controllerActivity name="controllerActivity" ifSubset="systems:PLATFORM2">
+            <origin>0 0</origin>
+            <pos>0 0.04</pos>
+            <size>1 0.025</size>
+            <itemSpacing>0.003</itemSpacing>
+            <horizontalAlignment>center</horizontalAlignment>
+            <imagePath>./resources/indicators/default.svg</imagePath>
+            <color>FFFFFF80</color>
+            <activityColor>FFFFFF</activityColor>
+            <hotkeyColor>${pinkColor}</hotkeyColor>
+            <zIndex>99</zIndex>
+        </controllerActivity>
+
+
         <!-- Clock -->
-        <text name="clock">
+        <text name="clock" ifSubset="systems:PLATFORM1">
             <origin>1 0</origin>
             <pos>0.96 0.035</pos>
             <size>0.5 0.1</size>
@@ -26,6 +40,17 @@
             <fontSize>0.034</fontSize>
             <color>FFFFFFFF</color>
             <alignment>right</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+        <text name="clock" ifSubset="systems:PLATFORM2">
+            <origin>0 0</origin>
+            <pos>0.022 0.043</pos>
+            <size>0.5 0.1</size>
+            <fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>FFFFFFFF</color>
+            <alignment>left</alignment>
             <zIndex>99</zIndex>
         </text>
 
