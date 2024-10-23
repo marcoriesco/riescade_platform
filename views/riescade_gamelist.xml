@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="gamecarousel" tinyScreen="false" displayName="GAMELIST ALT">
+    <view name="gamecarousel" tinyScreen="false" displayName="GAMELIST">
 
         <gamecarousel name="gamecarousel">
             <origin>0 0</origin>
@@ -236,25 +236,30 @@
         </image>
 
         <!-- Selected Game Description -->
-        <text name="md_description">
+        <text name="md_description_custom1" extra="true">
             <origin>0 0</origin>
             <pos>0.09 0.65</pos>
             <size>0.35 0.085</size>
             <fontPath>./resources/fonts/OpenSans-Regular.ttf</fontPath>
-            <fontSize>0.020</fontSize>
+            <fontSize>0.018</fontSize>
             <color>FFFFFFFF</color>
             <glowColor>00000016</glowColor>
             <glowSize>1</glowSize>
             <alignment>left</alignment>
             <lineSpacing>1.35</lineSpacing>
             <zIndex>1000</zIndex>
+            <value>{game:desc}</value>
+
+            <verticalAlignment>top</verticalAlignment>
+            <multiLine>true</multiLine>
+            <autoScroll>vertical</autoScroll>
         </text>
 
         <!-- Selected Game Play Button -->
         <rectangle name="button_play" extra="static">
             <origin>0 0</origin>
             <pos>0.09 0.772</pos>
-            <size>0.174 0.07</size>
+            <size>0.174 0.075</size>
             <color>FFFFFF10</color>
             <roundCorners>35</roundCorners>
             <zIndex>1000</zIndex>
@@ -289,9 +294,11 @@
 
         <!-- Selected Game Information -->
         <rectangle name="gameInformation" extra="static">
-            <pos>0.718 0.7625</pos>
-            <size>0.1927 0.0926</size>
+            <origin>0 0</origin>
+            <pos>0.275 0.772</pos>
+            <size>0.1927 0.075</size>
             <color>FFFFFF10</color>
+            <roundCorners>35</roundCorners>
             <zIndex>1000</zIndex>
 
             <image name="players">
@@ -354,14 +361,14 @@
         <!-- Cover 3D & 2D -->
         <image ifSubset="cover_gamelist:Ativo" if="${system.name} != 'collections'" name="md_thumbnail">
             <origin>0 1</origin>
-            <pos>0.718 0.75</pos>
+            <pos>0.718 0.847</pos>
             <size>0.1927 0</size>
             <opacity>0</opacity>
             <zIndex>1000</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="600" begin="0" mode="easeInOut" />
-                <animation property="y" from="0.85" to="0.75" duration="600" mode="easeInOut" />
+                <animation property="y" from="0.9" to="0.847" duration="600" mode="easeInOut" />
             </storyboard>
 
             <storyboard event="deactivate">

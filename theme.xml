@@ -89,8 +89,7 @@
     <include name="system">./views/riescade_system.xml</include>
 
     <!-- GAMELISTS -->
-    <!-- <include name="gamecarousel">./views/riescade_gamelist.xml</include> -->
-    <include name="gamecarousel">./views/riescade_gamelist_alt.xml</include>
+    <include name="gamecarousel">./views/riescade_gamelist.xml</include>
 
     <include>./views/common/header.xml</include>
 

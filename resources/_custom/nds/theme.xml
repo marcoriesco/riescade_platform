@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="gamecarousel" tinyScreen="false" displayName="GAMELIST">
+    <view name="gamecarousel">
 
         <!-- Background Default -->
         <image name="background_default_overlay" extra="true">
