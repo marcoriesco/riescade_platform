@@ -5,8 +5,7 @@
     <view name="gamecarousel">
 
         <image name="logo_active" extra="static">
-            <visible>false</visible>
-            <zIndex>0</zIndex>
+            <path>./resources/_parts/logo_selected_s.png</path>
         </image>
 
     </view>
