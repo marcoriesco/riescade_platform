@@ -4,9 +4,6 @@
 
     <view name="gamecarousel">
 
-        <image name="logo_active" extra="static">
-            <path>./resources/_parts/logo_selected_s.png</path>
-        </image>
 
     </view>
 

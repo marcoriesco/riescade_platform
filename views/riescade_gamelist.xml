@@ -18,7 +18,7 @@
             <logoAlignment>top</logoAlignment>
             <defaultTransition>fade &amp; slide</defaultTransition>
             <transitionSpeed>600</transitionSpeed>
-            <minLogoOpacity>0.8</minLogoOpacity>
+            <minLogoOpacity>1</minLogoOpacity>
             <scrollSound>./../resources/sounds/click.ogg</scrollSound>
             <imageSource>marquee</imageSource>
             <zIndex>2000</zIndex>
@@ -238,7 +238,7 @@
         </image>
 
         <!-- Selected Game Description -->
-        <text name="md_description_custom1" extra="true">
+        <text name="md_description_custom" extra="true">
             <origin>0 0</origin>
             <pos>0.09 0.65</pos>
             <size>0.35 0.085</size>
