@@ -248,7 +248,7 @@
             <glowColor>00000016</glowColor>
             <glowSize>1</glowSize>
             <alignment>left</alignment>
-            <lineSpacing>1.35</lineSpacing>
+            <lineSpacing>1.45</lineSpacing>
             <zIndex>1000</zIndex>
             <value>{game:desc}</value>
 
