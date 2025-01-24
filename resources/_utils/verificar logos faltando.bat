@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Caminho relativo da pasta com as subpastas (roms)
-set "diretorio_pastas=..\..\..\..\..\..\roms"
+set "diretorio_pastas=..\..\..\..\..\..\roms\teknoparrot"
 
 :: Caminho relativo da pasta com as imagens (clean)
 set "diretorio_imagens=..\logos\platform"
@@ -25,7 +25,13 @@ if not exist "%diretorio_imagens%" (
 :: Percorre todas as subpastas no diretório "roms" (apenas 1 nível)
 for /d %%p in ("%diretorio_pastas%\*") do (
     set "pasta=%%~nxp"
-    set "imagem=%diretorio_imagens%\%%~nxp.png"
+    
+    :: Remove o "_" do início do nome da pasta (se houver)
+    if "!pasta!" neq "!pasta:~0,1!" (
+        set "pasta=!pasta:~1!"
+    )
+    
+    set "imagem=%diretorio_imagens%\!pasta!.png"
     
     :: Verifica se a imagem correspondente existe
     if not exist "!imagem!" (
