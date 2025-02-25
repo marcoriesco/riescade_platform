@@ -115,7 +115,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <delay>1</delay>
-            <path>./resources/arts/animate/${system.theme}_animation.mp4</path>
+            <path>./resources/arts/animate/${system.theme}_animate.mp4</path>
             <effect>none</effect>
             <zIndex>11</zIndex>
         </video>
