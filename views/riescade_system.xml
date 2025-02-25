@@ -110,6 +110,16 @@
             </storyboard>
         </image>
 
+        <video name="fanart_animate" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <delay>1</delay>
+            <path>./resources/arts/animate/${system.theme}_animation.mp4</path>
+            <effect>none</effect>
+            <zIndex>11</zIndex>
+        </video>
+
         <image name="overlay" extra="static">
             <origin>0 0</origin>
             <pos>0 0</pos>
