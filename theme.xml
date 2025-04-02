@@ -61,6 +61,12 @@
         <include name="Desativado" />
     </subset>
 
+    <!-- COVER STYLE -->
+    <subset name="cover_gamelist_style" displayName="COVER STYLE" appliesTo="gamelist" ifSubset="cover_gamelist:Ativo">
+        <include name="2D" />
+        <include name="3D" />
+    </subset>
+
     <!-- VARS -->
     <variables>
         <!-- var delay -->

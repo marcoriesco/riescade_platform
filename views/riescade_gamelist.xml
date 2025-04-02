@@ -183,6 +183,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./resources/_parts/default.jpg</path>
+            <path>./resources/arts/default/${system.name}.jpg</path>
             <zIndex>900</zIndex>
         </image>
 
@@ -191,18 +192,18 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <opacity>0</opacity>
-            <scale>2</scale>
+            <!-- <opacity>0</opacity> -->
+            <scale>1.5</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
             <linearSmooth>true</linearSmooth>
             <zIndex>901</zIndex>
 
             <storyboard event="activate">
-                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
-                <animation property="scale" from="2" to="1" duration="600" mode="easeOut" />
+                <!-- <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" /> -->
+                <animation property="scale" from="1.5" to="1" duration="600" mode="easeOut" />
             </storyboard>
             <storyboard event="deactivate">
-                <animation property="opacity" from="1" to="0" duration="800" mode="easeIn" />
+                <!-- <animation property="opacity" from="1" to="0" duration="800" mode="easeIn" /> -->
             </storyboard>
         </image>
 
@@ -361,7 +362,32 @@
         </rectangle>
 
         <!-- Cover 3D & 2D -->
-        <image ifSubset="cover_gamelist:Ativo" if="${system.name} != 'collections'" name="md_thumbnail">
+        <image ifSubset="cover_gamelist:Ativo" if="${system.name} != 'collections'" name="md_thumbnail_teste" extra="true">
+            <origin>0 1</origin>
+            <pos>0.718 0.847</pos>
+            <size>0.1927 0</size>
+            <opacity>0</opacity>
+            <zIndex>1000</zIndex>
+
+            <path ifSubset="cover_gamelist_style:2D">./../../../../../roms/$system/images/{game:stem}-thumb.png</path>
+            <path ifSubset="cover_gamelist_style:2D">./../../../../../roms/$system/images/{game:stem}-thumb.jpg</path>
+            <path ifSubset="cover_gamelist_style:2D">./../../../../../roms/$system/medium_artwork/cover/{game:stem}.jpg</path>
+            <path ifSubset="cover_gamelist_style:2D">./../../../../../roms/$system/medium_artwork/cover/{game:stem}.png</path>
+
+            <path ifSubset="cover_gamelist_style:3D">./../../../../../roms/$system/images/3D/{game:stem}-thumb.png</path>
+            <path ifSubset="cover_gamelist_style:3D">./../../../../../roms/$system/medium_artwork/cover/3D/{game:stem}.png</path>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="600" begin="0" mode="easeInOut" />
+                <animation property="y" from="0.9" to="0.847" duration="600" mode="easeInOut" />
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
+            </storyboard>
+
+        </image>
+        <!-- <image ifSubset="cover_gamelist:Ativo" if="${system.name} != 'collections'" name="md_thumbnail">
             <origin>0 1</origin>
             <pos>0.718 0.847</pos>
             <size>0.1927 0</size>
@@ -377,7 +403,7 @@
                 <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
             </storyboard>
 
-        </image>
+        </image> -->
 
     </view>
 
