@@ -98,14 +98,14 @@
             <size>1 1</size>
             <path>./resources/_parts/default.jpg</path>
             <path>./resources/arts/${system.theme}.jpg</path>
-            <opacity>0</opacity>
-            <scale>2</scale>
+            <!-- <opacity>0</opacity> -->
+            <scale>1.5</scale>
             <scaleOrigin>0.5 0.5</scaleOrigin>
             <linearSmooth>true</linearSmooth>
             <zIndex>10</zIndex>
 
             <storyboard>
-                <animation property="opacity" from="0" to="1" duration="2500" mode="easeOut" />
+                <!-- <animation property="opacity" from="0" to="1" duration="2500" mode="easeOut" /> -->
                 <animation property="scale" from="2" to="1" duration="600" mode="easeOut" />
             </storyboard>
         </image>
