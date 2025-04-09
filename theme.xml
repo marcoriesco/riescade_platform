@@ -110,7 +110,4 @@
     <include>./views/common/content.xml</include>
     <include>./views/common/${system.theme}.xml</include>
 
-    <!-- LOAD CUSTOM SYSTEM THEMES -->
-    <include>./resources/_custom/${system.theme}/theme.xml</include>
-
 </theme>
